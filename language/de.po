@@ -1,0 +1,161 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: justblack theme options 1.5.2\n"
+"POT-Creation-Date: 2014-08-20 23:36+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Hermann Hartenthaler <hermann@hartenthaler.de>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
+"X-Poedit-SearchPath-0: ..\\\n"
+
+#: modules_v3/justlight_theme_options/help_text.php:51
+msgid "<p>Click a row, then drag-and-drop to re-order the topmenu items. Then click the 'save' button.</p>"
+msgstr "<p>Um die Einträge im Hauptmenü umzuordnen, verschieben Sie die Zeilen mit der Maus. Vergessen Sie nicht, danach auf 'Speichern' zu klicken!</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:32
+msgid "<p>If this option is set the Media Menu will be moved to the topmenu. The names of first level media folders will appear as submenu of the new Media Menu.</p><p>Warning: these menu links are not translated automatically. If you want your menus to be translated you will have to do it manually with the instructions in the webrees WIKI.</p>"
+msgstr "<p>Hiermit wird das Medienmenü ins Hauptmenü verschoben. Die Namen der Unterverzeichnisse auf der ersten Ebene erscheinen als Untermenü im neuen Menü \"Multimedia\".</p><p>Achtung: Diese Untermenüpunkte werden nicht automatisch übersetzt. Um die Einträge zu übersetzen, sollten Sie sich nach den Anweisungen im WIKI von webtrees richten.</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:41
+msgid "<p>If you set this option the results on the media list page will include subfolders.</p>"
+msgstr "<p>Wenn Sie diese Option auswählen, dann wird die Medienseite auch Unterordner enthalten.<p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:45
+msgid "<p>The Google Docs Viewer is a way to present pdf files in a consistant way across all browsers. You are no longer dependent on the user's own PDF viewer.</p><p>A second advantage of using the Google Docs Viewer is that it now is possible to place watermarks on pdf files. If you have set the option to use watermarks for images in your tree settings, the watermarks will now be placed on pdf-files too.</p><p>You and your users don't need a google account to use the Google Docs Viewer.</p>"
+msgstr "<p>Der Google Docs Viewer ermöglicht es, PDF-Dateien in allen Browsern in einheitlicher Form darzustellen. Ein lokal installierter PDF-Viewer ist damit nicht länger nötig.</p><p>Ein weiterer Vorteil bei der Nutzung des Google Docs Viewer ist die Möglichkeit, Wasserzeichen über das pdf-Dokument zu legen. Wenn Sie die Option \"Wasserzeichen\" für die Fotos in ihrem Stammbaum gesetzt haben, werden sie jetzt auch für die PDF-Dateien erzeugt.</p><p>Weder der Seitenbetreiber noch der Besucher der Seiten benötigt ein Google-Konto, um den Google Docs Viewer zu nutzen.</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:37
+msgid "<p>The default media folder will be used as link on the main media menu icon. If you click on this icon the medialist page for this folder appears.</p>"
+msgstr "<p>Der Standard-Medienordner wird als Link für das Mediensymbol im Hauptmenü benutzt. Beim Klicken darauf wird die Medienliste für diesen Ordner angezeigt.</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:36
+msgid "Choose a default media folder"
+msgstr "Wählen Sie den Standard-Medienordner"
+
+#: modules_v3/justlight_theme_options/module.php:413
+msgid "Choose a folder as default for the main menu link"
+msgstr "Wählen Sie einen Ordner als Standardeintrag für den Link im Hauptmenü"
+
+#: modules_v3/justlight_theme_options/module.php:405
+msgid "Include the reports topmenu in the compact 'View' topmenu?"
+msgstr "Verschieben der Liste der Berichte aus dem Hauptmenü in ein Untermenü von \"Zeige\"?"
+
+#. I18N: Name of a module
+#: modules_v3/justlight_theme_options/module.php:53
+msgid "JustLight Theme Options"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/help_text.php:31
+#: modules_v3/justlight_theme_options/module.php:409
+msgid "Media menu in topmenu"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/module.php:303
+msgid "Options for the JustLight theme"
+msgstr ""
+
+#. I18N: Description of the module
+#: modules_v3/justlight_theme_options/module.php:58
+msgid "Set options for the JustLight theme within the admin interface"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/module.php:430
+msgid "Sort Topmenu items"
+msgstr "Einträge im Hauptmenü sortieren"
+
+#: modules_v3/justlight_theme_options/help_text.php:50
+msgid "Sorting the topmenu"
+msgstr "Umsortieren des Hauptmenüs"
+
+#: modules_v3/justlight_theme_options/help_text.php:40
+msgid "Subfolders"
+msgstr "Unterordner"
+
+#: modules_v3/justlight_theme_options/module.php:426
+msgid "The settings will be reset to default. Are you sure you want to do this?"
+msgstr "Die Einstellungen werden auf die Standardwerte zurückgesetzt. Wollen Sie das wirklich?"
+
+#: modules_v3/justlight_theme_options/module.php:421
+msgid "Use Google Docs Viewer for pdf's?"
+msgstr "Google Docs Viewer zur Anzeige von PDFs verwenden?"
+
+#: modules_v3/justlight_theme_options/module.php:401
+msgid "Use a compact menu?"
+msgstr "Kompaktes Menü für Diagramme, Listen etc. verwenden?"
+
+#: modules_v3/justlight_theme_options/help_text.php:44
+msgid "Use the Google Docs Viewer"
+msgstr "Google Docs Viewer einsetzen"
+
+#~ msgid "<p>Here you can choose the location for the Family tree title in the header.</p>"
+#~ msgstr "<p>Hier bestimmen Sie die Position für den Titel im Kopfbereich.</p>"
+
+#~ msgid "<p>Uncheck this box if you already use the Family tree title in the header image. Otherwise leave the checkbox checked.</p>"
+#~ msgstr "<p>Entfernen Sie diese Auswahl, wenn der Stammbaumtitel bereits in der Titelgrafik enthalten ist. Ansonsten lassen sie die Auswahl gesetzt.</p>"
+
+#~ msgid "<p>You can use flags in the bar above the topmenu bar in the header. These flags replaces the default dropdown menu. We advice you not to use this option if you have more then ten languages installed.</p><p>You can remove unused languages from the folder languages in your webtrees installation.</p>"
+#~ msgstr "<p>Sie können statt des Auswahlmenüs für die Sprache auch Nationalflaggen im Kopfbereich über der Hauptauswahl verwenden. Bei mehr als zehn installierten Sprachen sollten Sie allerdings auf diese Möglichkeit verzichten.</p><p>Nicht genutzte oder unerwünschte Sprachen können Sie ganz einfach aus dem Ordner '/languages' im webtrees-Verzeichnis löschen.</p>"
+
+#~ msgid "Current header image"
+#~ msgstr "Aktuelle Titelgrafik im Kopfbereich"
+
+#~ msgid "Error: You have not uploaded an image or the image you have uploaded is not a valid image! Your settings are not saved."
+#~ msgstr "Fehler:  Entweder wurde kein Bild hochgeladen oder das hochgeladene Bild hat nicht das richtige Dateiformat! Ihre Einstellungen wurden nicht gesichert."
+
+#~ msgid "Flags"
+#~ msgstr "Fahnen"
+
+#~ msgid "Height of the header area"
+#~ msgstr "Höhe des Kopfbereiches"
+
+#~ msgid "JustBlack Theme Options"
+#~ msgstr "JustBlack: Optionen für das Thema"
+
+#~ msgid "Media menu in topmenu?"
+#~ msgstr "Medienmenü im Hauptmenü anzeigen?"
+
+#~ msgid "Options for the JustBlack theme"
+#~ msgstr "Optionen für das Anzeigethema JustBlack"
+
+#~ msgid "Position of the Family tree title"
+#~ msgstr "Position des Stammbaumtitels"
+
+#~ msgid "Resize header image (800 x 150px)"
+#~ msgstr "Titelgrafik auf (800px mal 150px) vereinheitlichen?"
+
+#~ msgid "Set options for the JustBlack theme within the admin interface"
+#~ msgstr "Setzen der Optionen des Anzeigethemas JustBlack im Verwaltungsbereich"
+
+#~ msgid "Size of the Family tree title"
+#~ msgstr "Größe des Stammbaumtitels"
+
+#~ msgid "Upload a (new) custom header image"
+#~ msgstr "Hochladen einer (neuen) Grafik für den Kopfbereich"
+
+#~ msgid "Use flags in header bar as language menu?"
+#~ msgstr "Fahnen zur Sprachauswahl im Kopfbereich verwenden?"
+
+#~ msgid "Use header image?"
+#~ msgstr "Eine Titelgrafik im Kopfbereich verwenden?"
+
+#~ msgid "Use the Family tree title in the header?"
+#~ msgstr "Den Stammbaumtitel im Kopfbereich verwenden?"
+
+#~ msgid "Your custom header image is succesfully saved."
+#~ msgstr "Ihre Grafik für den Kopfbereich wurde gesichert."
+
+#~ msgid "Your settings are reset to default due to changes in this version of the module. Please update the settings to your needs."
+#~ msgstr "Auf Grund der Änderungen in dieser neuen Modulversion wurden Ihre Einstellungen auf die Standardwerte zurückgesetzt. Bitte ändern Sie diese Einstellungen bei Bedarf."
+
+#~ msgid "left"
+#~ msgstr "von links"
+
+#~ msgid "right"
+#~ msgstr "von rechts"

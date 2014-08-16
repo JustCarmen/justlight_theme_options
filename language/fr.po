@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: justblack theme options 1.5.0\n"
+"POT-Creation-Date: 2014-08-20 23:36+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: phicome <phicome@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
+
+#: modules_v3/justlight_theme_options/help_text.php:51
+msgid "<p>Click a row, then drag-and-drop to re-order the topmenu items. Then click the 'save' button.</p>"
+msgstr "<p>Cliquez sur une ligne, puis faites un glisser-déposer pour réorganiser les éléments du menu. Cliquez ensuite sur le bouton Enregistrer.</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:32
+#, fuzzy
+msgid "<p>If this option is set the Media Menu will be moved to the topmenu. The names of first level media folders will appear as submenu of the new Media Menu.</p><p>Warning: these menu links are not translated automatically. If you want your menus to be translated you will have to do it manually with the instructions in the webrees WIKI.</p>"
+msgstr "<p>Si cette option est activée, un nouveau menu Média sera ajouté aux menus principaux. Le nom des dossiers de médias apparaitront comme sous-menu du nouveau menu Média.</p><p>Attention : Ces liens de sous-menu ne sont pas traduits automatiquement. Pour les traduire, il faut le faire manuellement (voir les instructions dans le WIKI de webtrees).</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:41
+msgid "<p>If you set this option the results on the media list page will include subfolders.</p>"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/help_text.php:45
+msgid "<p>The Google Docs Viewer is a way to present pdf files in a consistant way across all browsers. You are no longer dependent on the user's own PDF viewer.</p><p>A second advantage of using the Google Docs Viewer is that it now is possible to place watermarks on pdf files. If you have set the option to use watermarks for images in your tree settings, the watermarks will now be placed on pdf-files too.</p><p>You and your users don't need a google account to use the Google Docs Viewer.</p>"
+msgstr "<p>Google Docs Viewer permet de présenter les fichiers PDF de manière identique dans tous les navigateurs. Vous n'êtes plus dépendant de la visionneuse PDF de l'utilisateur.</p><p>Autre avantage : Il est maintenant possible de placer des filigranes sur les fichiers pdf. Si cette option est activée pour les images dans vos paramètres d'arbres, les filigranes seront aussi placés sur les fichiers PDF.</p><p>Google Docs Viewer ne nécessite pas de compte Google pour être utilisé.</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:37
+msgid "<p>The default media folder will be used as link on the main media menu icon. If you click on this icon the medialist page for this folder appears.</p>"
+msgstr "<p>Le dossier de médias par défaut sera utilisé comme lien dans le menu Média principal. Si vous cliquez sur cette icône, la page de liste des médias de ce dossier apparaîtra.</p>"
+
+#: modules_v3/justlight_theme_options/help_text.php:36
+msgid "Choose a default media folder"
+msgstr "Choisir un dossier de médias"
+
+#: modules_v3/justlight_theme_options/module.php:413
+msgid "Choose a folder as default for the main menu link"
+msgstr "Choisir un dossier de médias comme lien du menu principal"
+
+#: modules_v3/justlight_theme_options/module.php:405
+msgid "Include the reports topmenu in the compact 'View' topmenu?"
+msgstr "Inclure le menu rapports dans le menu compact ?"
+
+#. I18N: Name of a module
+#: modules_v3/justlight_theme_options/module.php:53
+msgid "JustLight Theme Options"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/help_text.php:31
+#: modules_v3/justlight_theme_options/module.php:409
+msgid "Media menu in topmenu"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/module.php:303
+msgid "Options for the JustLight theme"
+msgstr ""
+
+#. I18N: Description of the module
+#: modules_v3/justlight_theme_options/module.php:58
+msgid "Set options for the JustLight theme within the admin interface"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/module.php:430
+msgid "Sort Topmenu items"
+msgstr "Tri des items du menu"
+
+#: modules_v3/justlight_theme_options/help_text.php:50
+msgid "Sorting the topmenu"
+msgstr "Tri du menu"
+
+#: modules_v3/justlight_theme_options/help_text.php:40
+msgid "Subfolders"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/module.php:426
+msgid "The settings will be reset to default. Are you sure you want to do this?"
+msgstr ""
+
+#: modules_v3/justlight_theme_options/module.php:421
+msgid "Use Google Docs Viewer for pdf's?"
+msgstr "Utiliser Google Docs Viewer pour les PDF ?"
+
+#: modules_v3/justlight_theme_options/module.php:401
+msgid "Use a compact menu?"
+msgstr "Utiliser le menu compact ?"
+
+#: modules_v3/justlight_theme_options/help_text.php:44
+msgid "Use the Google Docs Viewer"
+msgstr "Utiliser Google Docs Viewer"
+
+#, fuzzy
+#~ msgid "<p>Here you can choose the location for the Family tree title in the header.</p>"
+#~ msgstr "<p>Ici, vous pouvez choisir l'emplacement pour le titre de l'arbre dans l'en-tête. Entrez les valeurs dans le sens horaire (Haut, Droite, Bas, Gauche), séparées par une virgule.</p>"
+
+#~ msgid "<p>Uncheck this box if you already use the Family tree title in the header image. Otherwise leave the checkbox checked.</p>"
+#~ msgstr "<p>Décochez cette case si vous utilisez déjà le titre de l'arbre dans l'image d'en-tête. Sinon, laissez la case cochée.</p>"
+
+#~ msgid "<p>You can use flags in the bar above the topmenu bar in the header. These flags replaces the default dropdown menu. We advice you not to use this option if you have more then ten languages installed.</p><p>You can remove unused languages from the folder languages in your webtrees installation.</p>"
+#~ msgstr "<p>Vous pouvez utiliser les drapeaux dans la barre située au-dessus du menu. Ces drapeaux remplacent le menu déroulant par défaut. Nous vous conseillons de ne pas utiliser cette option si vous avez plus d'une dizaine de langues installées.</p><p>Vous pouvez supprimer les langues non utilisées dans le dossier 'language' de votre installation webtrees.</p>"
+
+#, fuzzy
+#~ msgid "Current header image"
+#~ msgstr "Image d'en-tête personnalisée"
+
+#~ msgid "Error: You have not uploaded an image or the image you have uploaded is not a valid image! Your settings are not saved."
+#~ msgstr "Erreur : Vous n'avez pas téléchargé d'image ou l'image que vous avez téléchargée n'est pas une image valide ! Vos réglages ne sont pas sauvegardés."
+
+#~ msgid "Flags"
+#~ msgstr "Drapeaux"
+
+#~ msgid "Height of the header area"
+#~ msgstr "Hauteur de la zone d'en-tête"
+
+#~ msgid "JustBlack Theme Options"
+#~ msgstr "Options du thème JustBlack"
+
+#~ msgid "Media menu in topmenu?"
+#~ msgstr "Nouveau Menu Média ?"
+
+#~ msgid "Options for the JustBlack theme"
+#~ msgstr "Options pour le thème JustBlack"
+
+#~ msgid "Position of the Family tree title"
+#~ msgstr "Position du titre de l'arbre"
+
+#, fuzzy
+#~ msgid "Resize header image (800 x 150px)"
+#~ msgstr "Redimensionner (800x150px)"
+
+#~ msgid "Set options for the JustBlack theme within the admin interface"
+#~ msgstr "Définir les options du thème JustBlack dans l'interface d'administration"
+
+#~ msgid "Size of the Family tree title"
+#~ msgstr "Taille du titre de l'arbre"
+
+#~ msgid "Upload a (new) custom header image"
+#~ msgstr "Téléverser une (nouvelle) image d'en-tête"
+
+#~ msgid "Use flags in header bar as language menu?"
+#~ msgstr "Utiliser les drapeaux de langage dans la barre d'en-tête ?"
+
+#~ msgid "Use header image?"
+#~ msgstr "Utiliser une image d'en-tête ?"
+
+#~ msgid "Use the Family tree title in the header?"
+#~ msgstr "Utiliser le nom de l'arbre dans l'en-tête ?"
+
+#~ msgid "Your custom header image is succesfully saved."
+#~ msgstr "Votre image d'en-tête a été sauvegardée"
