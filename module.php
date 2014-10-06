@@ -73,7 +73,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 
 	// Get module options
 	public function options($key) {
-		$JL_OPTIONS = unserialize(get_module_setting($this->getName(), 'JL_OPTIONS'));
+		$JL_OPTIONS = unserialize($this->getSetting('JL_OPTIONS'));
 
 		$key = strtoupper($key);
 		if(empty($JL_OPTIONS) || (is_array($JL_OPTIONS) && !array_key_exists($key, $JL_OPTIONS))) {
@@ -292,7 +292,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 			$NEW_JL_OPTIONS = WT_Filter::postArray('NEW_JL_OPTIONS');
 			$NEW_JL_OPTIONS['MENU'] = $this->sortArray(WT_Filter::postArray('NEW_JB_MENU'), 'sort');		
 			
-			set_module_setting($this->getName(), 'JL_OPTIONS',  serialize($NEW_JL_OPTIONS));
+			$this->setSetting('JL_OPTIONS',  serialize($NEW_JL_OPTIONS));
 			Log::addConfigurationLog($this->getTitle().' config updated');
 		}
 
