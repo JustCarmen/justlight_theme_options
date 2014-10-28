@@ -207,7 +207,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 				if (count(glob(WT_DATA_DIR.$MEDIA_DIRECTORY.$value.'*')) > 0 ) {
 					$folder = array_filter(explode("/", $value));
 					// only list first level folders
-					if (!array_search($folder[0], $folderlist)) {
+					if (!empty($folder) && !array_search($folder[0], $folderlist)) {
 						$folderlist[$folder[0] . '/'] = WT_I18N::translate($folder[0]);
 					}
 				}
