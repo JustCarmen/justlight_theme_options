@@ -65,8 +65,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 			'COMPACT_MENU_REPORTS'	=> '1',
 			'MEDIA_MENU'			=> '0',
 			'MEDIA_LINK'			=> '',
-			'SUBFOLDERS'			=> '1',
-			'GVIEWER'				=> '0',
+			'SUBFOLDERS'			=> '1'
 		);
 		return $JL_DEFAULT[$key];
 	}
@@ -416,11 +415,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 						<div id="subfolders" class="field">
 							<label>'.WT_I18N::translate('Include subfolders').help_link('subfolders', $this->getName()).'</label>'.
 							two_state_checkbox('NEW_JL_OPTIONS[SUBFOLDERS]', $this->options('subfolders')).'
-						</div>
-						<div class="field">
-							<label>'.WT_I18N::translate('Use Google Docs Viewer for pdf\'s?').help_link('gviewer', $this->getName()).'</label>'.
-							two_state_checkbox('NEW_JL_OPTIONS[GVIEWER]', $this->options('gviewer')).'
-						</div>
+						</div>						
 						<div id="buttons">
 							<input type="submit" name="update" value="'.WT_I18N::translate('Save').'" />&nbsp;&nbsp;
 							<input type="reset" value="'.WT_I18N::translate('Reset').'" onclick="if (confirm(\''.WT_I18N::translate('The settings will be reset to default. Are you sure you want to do this?').'\')) window.location.href=\'module.php?mod='.$this->getName().'&amp;mod_action=admin_reset\';">

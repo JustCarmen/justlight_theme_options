@@ -12,7 +12,6 @@ Description
 On the JustLight Theme Options configuration page you can set the following options:
 * Use a compact 'View' menu. In the compact version of the topmenu the menu-items Charts, Lists, Calendar and Reports (optional) will be put together in one mainmenu-item.
 * Move the media menu link to the topmenu.
-* Use Google Docs Viewer for pdf display.
 * Order the main menu items. Ordering menu items here is more flexible then the sort option webtrees offers by default. Here you can shuffle ALL main menu items (except the homepage and my page menu). 
 
 Installation, upgrading and translations
