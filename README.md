@@ -3,7 +3,7 @@ JustLight Theme Options Module
 
 Theme options module for the JustLight theme in webtrees.
 
-This module requires [webtrees 1.6.1](https://github.com/fisharebest/webtrees). Download the latest stable release [here](https://github.com/JustCarmen/justlight_theme_options/releases/tag/1.6.1).
+This module requires [webtrees 1.6.2](https://github.com/fisharebest/webtrees). Download the latest stable release [here](https://github.com/JustCarmen/justlight_theme_options/releases/tag/1.6.2).
 
 This module can only be used in conjunction with the [JustLight Theme](https://github.com/JustCarmen/justlight).
 
