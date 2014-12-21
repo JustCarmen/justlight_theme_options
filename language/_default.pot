@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: justlight theme options module 1.6\n"
-"POT-Creation-Date: 2014-08-20 23:36+0100\n"
+"Project-Id-Version: justlight theme options module 1.6.2\n"
+"POT-Creation-Date: 2014-12-21 21:24+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Carmen Pijpers <carmen@justcarmen.nl>\n"
 "Language-Team: \n"
@@ -11,12 +11,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.1\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2;translate_c:2,1c\n"
 "X-Poedit-Basepath: c:\\xampp\\htdocs\\webtrees_build\\\n"
 "X-Poedit-SearchPath-0: modules_v3/justlight_theme_options\n"
 
-#: modules_v3/justlight_theme_options/help_text.php:51
+#: modules_v3/justlight_theme_options/help_text.php:45
 msgid "<p>Click a row, then drag-and-drop to re-order the topmenu items. Then click the 'save' button.</p>"
 msgstr ""
 
@@ -28,10 +28,6 @@ msgstr ""
 msgid "<p>If you set this option the results on the media list page will include subfolders.</p>"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/help_text.php:45
-msgid "<p>The Google Docs Viewer is a way to present pdf files in a consistant way across all browsers. You are no longer dependent on the user's own PDF viewer.</p><p>A second advantage of using the Google Docs Viewer is that it now is possible to place watermarks on pdf files. If you have set the option to use watermarks for images in your tree settings, the watermarks will now be placed on pdf-files too.</p><p>You and your users don't need a google account to use the Google Docs Viewer.</p>"
-msgstr ""
-
 #: modules_v3/justlight_theme_options/help_text.php:37
 msgid "<p>The default media folder will be used as link on the main media menu icon. If you click on this icon the medialist page for this folder appears.</p>"
 msgstr ""
@@ -40,11 +36,11 @@ msgstr ""
 msgid "Choose a default media folder"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/module.php:413
+#: modules_v3/justlight_theme_options/module.php:412
 msgid "Choose a folder as default for the main menu link"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/module.php:405
+#: modules_v3/justlight_theme_options/module.php:404
 msgid "Include the reports topmenu in the compact 'View' topmenu?"
 msgstr ""
 
@@ -54,11 +50,11 @@ msgid "JustLight Theme Options"
 msgstr ""
 
 #: modules_v3/justlight_theme_options/help_text.php:31
-#: modules_v3/justlight_theme_options/module.php:409
+#: modules_v3/justlight_theme_options/module.php:408
 msgid "Media menu in topmenu"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/module.php:303
+#: modules_v3/justlight_theme_options/module.php:302
 msgid "Options for the JustLight theme"
 msgstr ""
 
@@ -67,11 +63,11 @@ msgstr ""
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/module.php:430
+#: modules_v3/justlight_theme_options/module.php:425
 msgid "Sort Topmenu items"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/help_text.php:50
+#: modules_v3/justlight_theme_options/help_text.php:44
 msgid "Sorting the topmenu"
 msgstr ""
 
@@ -79,18 +75,10 @@ msgstr ""
 msgid "Subfolders"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/module.php:426
+#: modules_v3/justlight_theme_options/module.php:421
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr ""
 
-#: modules_v3/justlight_theme_options/module.php:421
-msgid "Use Google Docs Viewer for pdf's?"
-msgstr ""
-
-#: modules_v3/justlight_theme_options/module.php:401
+#: modules_v3/justlight_theme_options/module.php:400
 msgid "Use a compact menu?"
-msgstr ""
-
-#: modules_v3/justlight_theme_options/help_text.php:44
-msgid "Use the Google Docs Viewer"
 msgstr ""

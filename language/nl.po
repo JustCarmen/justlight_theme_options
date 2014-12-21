@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: justblack theme options 1.5.0\n"
-"POT-Creation-Date: 2014-08-20 23:36+0100\n"
+"POT-Creation-Date: 2014-12-21 21:24+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Carmen Pijpers <carmen@justcarmen.nl>\n"
 "Language-Team: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Poedit 1.6.7\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
-#: modules_v3/justlight_theme_options/help_text.php:51
+#: modules_v3/justlight_theme_options/help_text.php:45
 msgid "<p>Click a row, then drag-and-drop to re-order the topmenu items. Then click the 'save' button.</p>"
 msgstr "<p>Klik op een rij, sleep en laat los om de volgorde van de topmenu items te wijzigen. Klik daarna op de knop 'opslaan'.</p>"
 
@@ -26,10 +26,6 @@ msgstr "<p>Wanneer deze optie wordt ingesteld, verhuist het Media Menu naar het 
 msgid "<p>If you set this option the results on the media list page will include subfolders.</p>"
 msgstr "<p>Wanneer u deze optie instelt worden de resultaten op de media pagina getoond inclusief submappen.</p>"
 
-#: modules_v3/justlight_theme_options/help_text.php:45
-msgid "<p>The Google Docs Viewer is a way to present pdf files in a consistant way across all browsers. You are no longer dependent on the user's own PDF viewer.</p><p>A second advantage of using the Google Docs Viewer is that it now is possible to place watermarks on pdf files. If you have set the option to use watermarks for images in your tree settings, the watermarks will now be placed on pdf-files too.</p><p>You and your users don't need a google account to use the Google Docs Viewer.</p>"
-msgstr "<p>De Google Docs Viewer is een manier om pdf bestanden op een consistente manier in alle browsers te presenteren. U bent niet langer afhankelijk van de eigen PDF viewer van de gebruiker.</p><p>Een tweede voordeel van het gebruik van de Google Docs Viewer is dat het nu mogelijk is om watermerken te plaatsen op pdf-bestanden. Als u in uw stamboominstellingen de optie hebt ingesteld om watermerken te plaatsen op afbeeldingen, worden er nu ook watermerken geplaatst op pdf-bestanden.</p><p>U en uw gebruikers hebben geen googe account nodig om gebruik te maken van de Google Docs Viewer.</p>"
-
 #: modules_v3/justlight_theme_options/help_text.php:37
 msgid "<p>The default media folder will be used as link on the main media menu icon. If you click on this icon the medialist page for this folder appears.</p>"
 msgstr "<p>De standaard media folder wordt gebruikt als link voor het hoofd media menu icoon. Wanneer u op dit icoon klikt verschijnt de medialist pagina voor deze folder.</p>"
@@ -38,11 +34,11 @@ msgstr "<p>De standaard media folder wordt gebruikt als link voor het hoofd medi
 msgid "Choose a default media folder"
 msgstr "Kies een standaard media folder"
 
-#: modules_v3/justlight_theme_options/module.php:413
+#: modules_v3/justlight_theme_options/module.php:412
 msgid "Choose a folder as default for the main menu link"
 msgstr "Kies een standaard folder voor de hoofdmenu link"
 
-#: modules_v3/justlight_theme_options/module.php:405
+#: modules_v3/justlight_theme_options/module.php:404
 msgid "Include the reports topmenu in the compact 'View' topmenu?"
 msgstr "Wilt u het menu rapporten opnemen in het compacte 'Bekijk' menu?"
 
@@ -52,11 +48,11 @@ msgid "JustLight Theme Options"
 msgstr "JustLight Thema Opties"
 
 #: modules_v3/justlight_theme_options/help_text.php:31
-#: modules_v3/justlight_theme_options/module.php:409
+#: modules_v3/justlight_theme_options/module.php:408
 msgid "Media menu in topmenu"
 msgstr "Media menu in hoofdmenu"
 
-#: modules_v3/justlight_theme_options/module.php:303
+#: modules_v3/justlight_theme_options/module.php:302
 msgid "Options for the JustLight theme"
 msgstr "Opties voor het JustLight thema"
 
@@ -65,11 +61,11 @@ msgstr "Opties voor het JustLight thema"
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Zet opties voor het JustLight thema vanuit de administratie interface"
 
-#: modules_v3/justlight_theme_options/module.php:430
+#: modules_v3/justlight_theme_options/module.php:425
 msgid "Sort Topmenu items"
 msgstr "Topmenu items sorteren"
 
-#: modules_v3/justlight_theme_options/help_text.php:50
+#: modules_v3/justlight_theme_options/help_text.php:44
 msgid "Sorting the topmenu"
 msgstr "Het topmenu sorteren"
 
@@ -77,99 +73,10 @@ msgstr "Het topmenu sorteren"
 msgid "Subfolders"
 msgstr "Submappen"
 
-#: modules_v3/justlight_theme_options/module.php:426
+#: modules_v3/justlight_theme_options/module.php:421
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "De instellingen worden teruggezet naar de standaard instellingen. Weet u zeker dat u dit wilt?"
 
-#: modules_v3/justlight_theme_options/module.php:421
-msgid "Use Google Docs Viewer for pdf's?"
-msgstr "Gebruik Google Docs Viewer for pdf's?"
-
-#: modules_v3/justlight_theme_options/module.php:401
+#: modules_v3/justlight_theme_options/module.php:400
 msgid "Use a compact menu?"
 msgstr "Gebruik een compact menu?"
-
-#: modules_v3/justlight_theme_options/help_text.php:44
-msgid "Use the Google Docs Viewer"
-msgstr "Gebruik de Google Docs Viewer"
-
-#~ msgid "<p>Here you can choose the location for the Family tree title in the header.</p>"
-#~ msgstr "<p>Hier kunt u de locatie van de stamboomtitel in de header bepalen.</p>"
-
-#~ msgid "<p>Uncheck this box if you already use the Family tree title in the header image. Otherwise leave the checkbox checked.</p>"
-#~ msgstr "<p>Vink deze optie niet aan wanneer u de stamboomtitel al gebruikt in de header afbeelding. Is dat niet het geval, laat dan de checkbox aangevinkt.</p>"
-
-#~ msgid "<p>You can use flags in the bar above the topmenu bar in the header. These flags replaces the default dropdown menu. We advice you not to use this option if you have more then ten languages installed.</p><p>You can remove unused languages from the folder languages in your webtrees installation.</p>"
-#~ msgstr "<p>U kunt vlaggen gebruiken in de balk boven het topmenu in de header. Deze vlaggen vervangen het standaard dropdown menu. Wij adviseren u om deze optie niet in te schakelen wanneer u meer dan tien talgen heeft geïnstalleerd.</p><p>U kunt ongebruikte talen verwijderen uit de folder languages in uw webtrees installatie.</p>"
-
-#~ msgid "All JustBlack Theme options are reset to default due to changes in this version of the module. Click <a href=\"module.php?mod=justblack_theme_options&mod_action=admin_config\">HERE</a> to update the settings to your needs."
-#~ msgstr "Alle JustBlack Thema opties zijn teruggezet naar de standaard instellingen als gevolg van wijzigingen in deze versie van de module. Klik <a href=\"module.php?mod=justblack_theme_options&mod_action=admin_config\">HIER</a> om de instellingen aan te passen."
-
-#~ msgid "Current header image"
-#~ msgstr "Huidige header afbeelding"
-
-#~ msgid "Error: You have not uploaded an image or the image you have uploaded is not a valid image! Your settings are not saved."
-#~ msgstr "Fout: U hebt geen afbeelding geupload of de afbeelding die u hebt geupload is niet geldig. Uw instellingen zijn niet opgeslagen."
-
-#~ msgid "Flags"
-#~ msgstr "Vlaggen"
-
-#~ msgid "Height of the header area"
-#~ msgstr "Hoogte van het header gebied"
-
-#~ msgid "Hide media facts"
-#~ msgstr "Verberg media feiten"
-
-#~ msgid "JustBlack Theme Options"
-#~ msgstr "JustBlack Thema Opties"
-
-#~ msgid "Media menu in topmenu?"
-#~ msgstr "Media menu in topmenu?"
-
-#~ msgid "Options for the JustBlack theme"
-#~ msgstr "Opties voor het JustBlack thema"
-
-#~ msgid "Position of the Family tree title"
-#~ msgstr "Positie van de stamboomtitel"
-
-#~ msgid "Resize header image (800 x 150px)"
-#~ msgstr "Resize header afbeelding (800 x 150px)"
-
-#~ msgid "Set options for the JustBlack theme within the admin interface"
-#~ msgstr "Zet opties voor het JustBlack thema vanuit de administratie interface"
-
-#~ msgid "Size of the Family tree title"
-#~ msgstr "Grootte van de stamboomtitel"
-
-#~ msgid "Upload a (new) custom header image"
-#~ msgstr "Upload een (nieuwe) zelf gekozen header afbeelding"
-
-#~ msgid "Use flags in header bar as language menu?"
-#~ msgstr "Gebruik vlaggen in de header bar als taalmenu?"
-
-#~ msgid "Use header image?"
-#~ msgstr "Gebruik de header afbeelding?"
-
-#~ msgid "Use the Family tree title in the header?"
-#~ msgstr "Gebruik de stamboomtitel in de header?"
-
-#~ msgid "With this option you can hide media facts like type and image/file size from the indivial-, family- and medialist page."
-#~ msgstr "Met deze optie kunt u media feiten, zoals soort en grootte van de afbeelding of het bestand, verbergen op de persoons-, gezins- en medialijst pagina."
-
-#~ msgid "Your custom header image is succesfully removed."
-#~ msgstr "Uw zelf gekozen header afbeelding is succesvol verwijderd."
-
-#~ msgid "Your custom header image is succesfully saved."
-#~ msgstr "Uw zelf gekozen header afbeelding is succesvol opgeslagen."
-
-#~ msgid "Your settings are reset to default due to changes in this version of the module. Please update the settings to your needs."
-#~ msgstr "Uw instellingen zijn teruggezet naar de standaard instellingen als gevolg van wijzigingen in deze versie van de module. Werk de instellingen bij naar de door u gewenste instellingen. "
-
-#~ msgid "left"
-#~ msgstr "links"
-
-#~ msgid "right"
-#~ msgstr "rechts"
-
-#~ msgid "top"
-#~ msgstr "top"
