@@ -417,7 +417,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 							two_state_checkbox('NEW_JL_OPTIONS[SUBFOLDERS]', $this->options('subfolders')).'
 						</div>						
 						<div id="buttons">
-							<input type="submit" name="update" value="'.WT_I18N::translate('Save').'" />&nbsp;&nbsp;
+							<input type="submit" name="update" value="'.WT_I18N::translate('Save').'" />
 							<input type="reset" value="'.WT_I18N::translate('Reset').'" onclick="if (confirm(\''.WT_I18N::translate('The settings will be reset to default. Are you sure you want to do this?').'\')) window.location.href=\'module.php?mod='.$this->getName().'&amp;mod_action=admin_reset\';">
 						</div>
 					</div>
