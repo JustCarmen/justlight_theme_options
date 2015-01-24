@@ -72,9 +72,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 
 	// Get module options
 	public function options($key) {
-		if ($key === 'css') {
-			return WT_MODULES_DIR . $this->getName() . '/css/style.css';
-		} elseif ($key === 'mediafolders') {
+		if ($key === 'mediafolders') {
 			return $this->listMediaFolders();
 		} else {
 			$JL_OPTIONS = unserialize($this->getSetting('JL_OPTIONS'));
