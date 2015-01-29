@@ -378,7 +378,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 
 		<!-- ADMIN PAGE CONTENT -->
 		<ol class="breadcrumb small">
-			<li><a href="admin.php"><?php echo WT_I18N::translate('Administration'); ?></a></li>
+			<li><a href="admin.php"><?php echo WT_I18N::translate('Control panel'); ?></a></li>
 			<li><a href="admin_modules.php"><?php echo WT_I18N::translate('Module administration'); ?></a></li>
 			<li class="active"><?php echo $this->getTitle(); ?></li>
 		</ol>
