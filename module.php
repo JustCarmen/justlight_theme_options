@@ -470,10 +470,14 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 					</div>
 				</div>
 			</div>
-			<button class="btn btn-primary" type="submit"><?php echo WT_I18N::translate('Save'); ?></button>
+			<button class="btn btn-primary" type="submit">
+				<i class="fa fa-check"></i>
+				<?php echo WT_I18N::translate('Save'); ?>
+			</button>
 			<button class="btn btn-primary" type="reset" onclick="if (confirm('<?php echo WT_I18N::translate('The settings will be reset to default. Are you sure you want to do this?'); ?>'))
 								window.location.href = 'module.php?mod=<?php echo $this->getName(); ?>&amp;mod_action=admin_reset';">
-					<?php echo WT_I18N::translate('Reset'); ?>
+				<i class="fa fa-recycle"></i>
+				<?php echo WT_I18N::translate('Reset'); ?>
 			</button>
 		</form>
 		<?php
