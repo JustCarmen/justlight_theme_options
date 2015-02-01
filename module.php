@@ -305,7 +305,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 			}
 
 			toggleFields("#compact-menu", "#reports");
-			toggleFields("#media-menu", "#medialist, #subfolders");
+			toggleFields("#media-menu", "#subfolders");
 
 			jQuery("#compact-menu").on("change", "input[type=radio]", function() {
 				var reports = jQuery("#reports").find("input[type=radio]:checked");
@@ -343,13 +343,7 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 				jQuery("#sort-menu, #trash-menu").trigger("sortupdate")
 			});
 
-			jQuery("#medialist select").each(function() {
-				if(jQuery(this).val() == "' . $this->options('media_link') . '") {
-					jQuery(this).prop("selected", true);
-				}
-			});
-
-			 jQuery("#sort-menu").sortable({
+			jQuery("#sort-menu").sortable({
 				items: "li:not(.disabled)",
 				cursor: "move",
 				update: function(event, ui) {
@@ -417,16 +411,6 @@ class justlight_theme_options_WT_Module extends WT_Module implements WT_Module_C
 									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu')); ?>
 									<p class="small text-muted"><?php echo WT_I18N::translate('If this option is set the media menu will be moved to the topmenu. The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.'); ?></p>
 								</div>
-							</div>
-							<!-- MEDIA FOLDER LIST -->
-							<div id="medialist" class="form-group form-group-sm">
-								<label class="control-label col-sm-4">
-									<?php echo WT_I18N::translate('Choose a folder as default for the main menu link'); ?>
-								</label>
-								<div class="col-sm-2">
-									<?php echo select_edit_control('NEW_JL_OPTIONS[MEDIA_LINK]', $this->options('mediafolders'), null, $this->options('media_link'), 'class="form-control"'); ?>
-								</div>
-								<div class="col-sm-8"><p class="small text-muted"><?php echo WT_I18N::translate('The media folder you choose here will be used as default folder for media menu link of the main menu. If you click on the media link or icon in the main menu, the page opens with the media items from this folder.'); ?></p></div>
 							</div>
 							<!-- SUBFOLDERS -->
 							<div id="subfolders" class="form-group form-group-sm">
