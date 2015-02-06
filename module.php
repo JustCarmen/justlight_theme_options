@@ -170,8 +170,11 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 	}
 
 	private function listMediaFolders() {
-		global $MEDIA_DIRECTORY;
+		global $WT_TREE;
+		
+		$MEDIA_DIRECTORY = $WT_TREE->getPreference('MEDIA_DIRECTORY');
 		$folders = WT_Query_Media::folderList();
+		
 		foreach ($folders as $key => $value) {
 			if ($key == null && empty($value)) {
 				$folderlist[$MEDIA_DIRECTORY] = strtoupper(I18N::translate(substr($MEDIA_DIRECTORY, 0, -1)));
