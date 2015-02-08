@@ -56,6 +56,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 	// Set default module options
 	private function setDefault($key) {
 		$JL_DEFAULT = array(
+			'TITLESIZE'				 => '32',
 			'COMPACT_MENU'			 => '0',
 			'COMPACT_MENU_REPORTS'	 => '1',
 			'MEDIA_MENU'			 => '0',
@@ -380,6 +381,24 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 					</div>
 					<div class="panel-collapse collapse in" id="collapseOne">
 						<div class="panel-body">
+							<!-- TREE TITLE SIZE -->
+							<div id="title-size" class="form-group form-group-sm">
+								<label class="control-label col-sm-4">
+									<?php echo I18N::translate('Size of the Family tree title'); ?>
+								</label>
+								<div class="col-sm-2">
+									<div class="input-group">
+										<input
+											type="text"
+											value="<?php echo $this->options('titlesize'); ?>"
+											size="2"
+											name="NEW_JL_OPTIONS[TITLESIZE]"
+											class="form-control"
+											>
+										<span class="input-group-addon">px</span>
+									</div>
+								</div>
+							</div>
 							<!-- COMPACT MENU -->
 							<div id="compact-menu" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
