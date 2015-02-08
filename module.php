@@ -60,7 +60,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 			'COMPACT_MENU_REPORTS'	 => '1',
 			'MEDIA_MENU'			 => '0',
 			'MEDIA_LINK'			 => '',
-			'SUBFOLDERS'			 => '1'
+			'SHOW_SUBFOLDERS'		 => '1'
 		);
 		return $JL_DEFAULT[$key];
 	}
@@ -171,10 +171,10 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 
 	private function listMediaFolders() {
 		global $WT_TREE;
-		
+
 		$MEDIA_DIRECTORY = $WT_TREE->getPreference('MEDIA_DIRECTORY');
 		$folders = WT_Query_Media::folderList();
-		
+
 		foreach ($folders as $key => $value) {
 			if ($key == null && empty($value)) {
 				$folderlist[$MEDIA_DIRECTORY] = strtoupper(I18N::translate(substr($MEDIA_DIRECTORY, 0, -1)));
@@ -283,7 +283,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 				html_doc.appendChild(css);
 			}
 			include_css("' . WT_MODULES_DIR . $this->getName() . '/css/admin.css");
-				
+
 			function toggleFields(id, target) {
 				var selected = jQuery(id).find("input[type=radio]:checked");
 				var field = jQuery(target)
@@ -400,25 +400,31 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 								</div>
 							</div>
 							<!-- MEDIA MENU -->
+							<?php $folders = $this->options('mediafolders'); ?>
 							<div id="media-menu" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
 									<?php echo I18N::translate('Media menu in topmenu'); ?>
 								</label>
 								<div class="col-sm-8">
 									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu')); ?>
-									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the topmenu. The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.'); ?></p>
+									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the topmenu.'); ?></p>
+									<?php if (count($folders) > 1): // add extra information about subfolders ?>
+									<p class="small text-muted"><?php echo I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.'); ?></p>
+									<?php endif; ?>
 								</div>
 							</div>
-							<!-- SUBFOLDERS -->
+							<?php if (count($folders) > 1): // only show this option if we have subfolders ?>
+							<!-- SHOW SUBFOLDERS -->
 							<div id="subfolders" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
 									<?php echo I18N::translate('Include subfolders'); ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[SUBFOLDERS]', $this->options('subfolders')); ?>
+									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[SHOW_SUBFOLDERS]', $this->options('show_subfolders')); ?>
 									<p class="small text-muted"><?php echo I18N::translate('If you set this option the results on the media list page will include subfolders.'); ?></p>
 								</div>
 							</div>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>
