@@ -233,7 +233,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 				$this->config();
 				break;
 			case 'admin_reset':
-				$this->jl_reset();
+				$this->resetAll();
 				$this->config();
 				break;
 			default:
@@ -242,13 +242,13 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 	}
 
 	// Reset all settings to default
-	private function jl_reset() {
+	private function resetAll() {
 		Database::prepare("DELETE FROM `##module_setting` WHERE setting_name LIKE 'JL%'")->execute();
 		Log::addConfigurationLog($this->getTitle() . ' reset to default values');
 	}
 
 	// Radio buttons
-	private function radio_buttons($name, $selected) {
+	private function radioButtons($name, $selected) {
 		$values = array(
 			0	 => I18N::translate('no'),
 			1	 => I18N::translate('yes'),
@@ -386,7 +386,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 									<?php echo I18N::translate('Use a compact menu?'); ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[COMPACT_MENU]', $this->options('compact_menu')); ?>
+									<?php echo $this->radioButtons('NEW_JL_OPTIONS[COMPACT_MENU]', $this->options('compact_menu')); ?>
 									<p class="small text-muted"><?php echo I18N::translate('In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together.'); ?></p>
 								</div>
 							</div>
@@ -396,7 +396,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 									<?php echo I18N::translate('Include the reports topmenu in the compact \'View\' topmenu?'); ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[COMPACT_MENU_REPORTS]', $this->options('compact_menu_reports')); ?>
+									<?php echo $this->radioButtons('NEW_JL_OPTIONS[COMPACT_MENU_REPORTS]', $this->options('compact_menu_reports')); ?>
 								</div>
 							</div>
 							<!-- MEDIA MENU -->
@@ -406,7 +406,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 									<?php echo I18N::translate('Media menu in topmenu'); ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu')); ?>
+									<?php echo $this->radioButtons('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu')); ?>
 									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the topmenu.'); ?></p>
 									<?php if (count($folders) > 1): // add extra information about subfolders ?>
 									<p class="small text-muted"><?php echo I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.'); ?></p>
@@ -420,7 +420,7 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 									<?php echo I18N::translate('Include subfolders'); ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo $this->radio_buttons('NEW_JL_OPTIONS[SHOW_SUBFOLDERS]', $this->options('show_subfolders')); ?>
+									<?php echo $this->radioButtons('NEW_JL_OPTIONS[SHOW_SUBFOLDERS]', $this->options('show_subfolders')); ?>
 									<p class="small text-muted"><?php echo I18N::translate('If you set this option the results on the media list page will include subfolders.'); ?></p>
 								</div>
 							</div>
