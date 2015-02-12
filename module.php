@@ -230,15 +230,16 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 	// Extend ModuleConfigInterface
 	public function modAction($mod_action) {
 		switch ($mod_action) {
-			case 'admin_config':
-				$this->config();
-				break;
-			case 'admin_reset':
-				$this->resetAll();
-				$this->config();
-				break;
-			default:
-				header('HTTP/1.0 404 Not Found');
+		case 'admin_config':
+			$this->config();
+			break;
+		case 'admin_reset':
+			$this->resetAll();
+			$this->config();
+			break;		
+		default:
+			http_response_code(404);
+			break;
 		}
 	}
 
