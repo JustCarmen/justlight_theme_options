@@ -19,10 +19,10 @@ namespace Fisharebest\Webtrees;
 
 use Zend_Translate;
 
-class justlight_theme_options_WT_Module extends Module implements ModuleConfigInterface {
+class JustLightThemeOptionsModule extends Module implements ModuleConfigInterface {
 
 	public function __construct() {
-		parent::__construct();
+		parent::__construct('justlight_theme_options');
 		// Load any local user translations
 		if (is_dir(WT_MODULES_DIR . $this->getName() . '/language')) {
 			if (file_exists(WT_MODULES_DIR . $this->getName() . '/language/' . WT_LOCALE . '.mo')) {
@@ -496,3 +496,5 @@ class justlight_theme_options_WT_Module extends Module implements ModuleConfigIn
 	}
 
 }
+
+return new JustLightThemeOptionsModule;
