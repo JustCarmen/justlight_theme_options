@@ -178,7 +178,7 @@ class JustLightThemeOptionsModule extends Module implements ModuleConfigInterfac
 		global $WT_TREE;
 
 		$MEDIA_DIRECTORY = $WT_TREE->getPreference('MEDIA_DIRECTORY');
-		$folders = WT_Query_Media::folderList();
+		$folders = QueryMedia::folderList();
 
 		foreach ($folders as $key => $value) {
 			if ($key == null && empty($value)) {
