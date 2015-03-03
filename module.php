@@ -136,14 +136,18 @@ class JustLightThemeOptionsModule extends Module implements ModuleConfigInterfac
 	}
 
 	public function menuJustLight($menulist) {
-		$modules = Module::getActiveMenus();
+		$modules = array();
+		foreach (Tree::getAll() as $tree) {
+			$modules = array_merge(Module::getActiveMenus($tree), $modules);
+		}
+
 		// add newly activated modules to the menu
 		$sort = count($menulist) + 1;
-		foreach ($modules as $module) {
-			if ($module->getMenu() && !array_key_exists($module->getName(), $menulist)) {
-				$menulist[$module->getName()] = array(
+		foreach ($modules as $module_name => $module) {
+			if ($module->getMenu() && !array_key_exists($module_name, $menulist)) {
+				$menulist[$module_name] = array(
 					'title'		 => $module->getTitle(),
-					'label'		 => $module->getName(),
+					'label'		 => $module_name,
 					'sort'		 => $sort++,
 					'function'	 => 'menuModules'
 				);
@@ -236,7 +240,7 @@ class JustLightThemeOptionsModule extends Module implements ModuleConfigInterfac
 		case 'admin_reset':
 			$this->resetAll();
 			$this->config();
-			break;		
+			break;
 		default:
 			http_response_code(404);
 			break;
