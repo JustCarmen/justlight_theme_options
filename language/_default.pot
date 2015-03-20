@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-KeywordsList: translate;noop;plural:1,2;translate_c:2,1c\n"
+"X-Poedit-KeywordsList: translate;noop;plural:1,2;translateContext:2,1c\n"
 "X-Poedit-Basepath: c:\\xampp\\htdocs\\webtrees_build\\\n"
 "X-Poedit-SearchPath-0: modules_v3/justlight_theme_options\n"
 
