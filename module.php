@@ -19,7 +19,7 @@ namespace Fisharebest\Webtrees;
 
 use Zend_Translate;
 
-class JustLightThemeOptionsModule extends Module implements ModuleConfigInterface {
+class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
 
 	public function __construct() {
 		parent::__construct('justlight_theme_options');
