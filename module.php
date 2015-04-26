@@ -21,7 +21,7 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 
 	public function __construct() {
 		parent::__construct('justlight_theme_options');
-		
+
 		// update the database if neccessary
 		self::updateSchema();
 	}
@@ -217,16 +217,16 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 	// Extend ModuleConfigInterface
 	public function modAction($mod_action) {
 		switch ($mod_action) {
-		case 'admin_config':
-			$this->config();
-			break;
-		case 'admin_reset':
-			$this->resetAll();
-			$this->config();
-			break;
-		default:
-			http_response_code(404);
-			break;
+			case 'admin_config':
+				$this->config();
+				break;
+			case 'admin_reset':
+				$this->resetAll();
+				$this->config();
+				break;
+			default:
+				http_response_code(404);
+				break;
 		}
 	}
 
@@ -406,21 +406,21 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 									<?php echo edit_field_yes_no('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu'), 'class="radio-inline"'); ?>
 									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the topmenu.'); ?></p>
 									<?php if (count($folders) > 1): // add extra information about subfolders ?>
-									<p class="small text-muted"><?php echo I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.'); ?></p>
+										<p class="small text-muted"><?php echo I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.'); ?></p>
 									<?php endif; ?>
 								</div>
 							</div>
 							<?php if (count($folders) > 1): // only show this option if we have subfolders ?>
-							<!-- SHOW SUBFOLDERS -->
-							<div id="subfolders" class="form-group form-group-sm">
-								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Include subfolders'); ?>
-								</label>
-								<div class="col-sm-8">
-									<?php echo edit_field_yes_no('NEW_JL_OPTIONS[SHOW_SUBFOLDERS]', $this->options('show_subfolders'), 'class="radio-inline"'); ?>
-									<p class="small text-muted"><?php echo I18N::translate('If you set this option the results on the media list page will include subfolders.'); ?></p>
+								<!-- SHOW SUBFOLDERS -->
+								<div id="subfolders" class="form-group form-group-sm">
+									<label class="control-label col-sm-4">
+										<?php echo I18N::translate('Include subfolders'); ?>
+									</label>
+									<div class="col-sm-8">
+										<?php echo edit_field_yes_no('NEW_JL_OPTIONS[SHOW_SUBFOLDERS]', $this->options('show_subfolders'), 'class="radio-inline"'); ?>
+										<p class="small text-muted"><?php echo I18N::translate('If you set this option the results on the media list page will include subfolders.'); ?></p>
+									</div>
 								</div>
-							</div>
 							<?php endif; ?>
 						</div>
 					</div>
@@ -471,7 +471,7 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 	public function getConfigLink() {
 		return 'module.php?mod=' . $this->getName() . '&amp;mod_action=admin_config';
 	}
-	
+
 	/**
 	 * Make sure the database structure is up-to-date.
 	 * Update database when updating from a version prior then version 1.5.2.1
