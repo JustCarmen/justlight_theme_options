@@ -480,15 +480,13 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 	 *
 	 */
 	protected static function updateSchema() {
-		if (Auth::isAdmin()) {
-			try {
-				Database::updateSchema(WT_ROOT . WT_MODULES_DIR . 'justlight_theme_options/db_schema/', 'JL_SCHEMA_VERSION', 1);
-			} catch (PDOException $ex) {
-				// The schema update scripts should never fail.  If they do, there is no clean recovery.
-				FlashMessages::addMessage($ex->getMessage(), 'danger');
-				header('Location: ' . WT_BASE_URL . 'site-unavailable.php');
-				throw $ex;
-			}
+		try {
+			Database::updateSchema(WT_ROOT . WT_MODULES_DIR . 'justlight_theme_options/db_schema/', 'JL_SCHEMA_VERSION', 2);
+		} catch (PDOException $ex) {
+			// The schema update scripts should never fail.  If they do, there is no clean recovery.
+			FlashMessages::addMessage($ex->getMessage(), 'danger');
+			header('Location: ' . WT_BASE_URL . 'site-unavailable.php');
+			throw $ex;
 		}
 	}
 
