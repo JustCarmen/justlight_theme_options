@@ -1,6 +1,4 @@
 <?php
-namespace Fisharebest\Webtrees;
-
 /**
  * webtrees: online genealogy
  * Copyright (C) 2015 webtrees development team
@@ -15,11 +13,12 @@ namespace Fisharebest\Webtrees;
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+namespace Fisharebest\Webtrees;
 
 $rows = Database::prepare("SELECT * FROM `##module_setting` WHERE setting_name LIKE 'JL%'")->execute()->fetchAll();
-if(count($rows) > 0) {
+if (count($rows) > 0) {
 	Database::prepare("DELETE FROM `##module_setting` WHERE setting_name LIKE 'JL%'")->execute();
-	Log::addConfigurationLog(I18N::translate('JustLight Theme Options').' reset to default values due to major changes in webtrees ' . WT_VERSION);
+	Log::addConfigurationLog(I18N::translate('JustLight Theme Options') . ' reset to default values due to major changes in webtrees ' . WT_VERSION);
 }
 
 // Update the version to indicate success

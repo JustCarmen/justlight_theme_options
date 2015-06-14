@@ -1,6 +1,4 @@
 <?php
-namespace Fisharebest\Webtrees;
-
 /**
  * webtrees: online genealogy
  * Copyright (C) 2015 webtrees development team
@@ -16,11 +14,12 @@ namespace Fisharebest\Webtrees;
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+namespace Fisharebest\Webtrees;
 
-use Fisharebest\Webtrees\Module\AbstractModule;
-use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use Fisharebest\Webtrees\Controller\PageController;
 use Fisharebest\Webtrees\Functions\FunctionsEdit;
+use Fisharebest\Webtrees\Module\AbstractModule;
+use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use Fisharebest\Webtrees\Query\QueryMedia;
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
@@ -411,12 +410,12 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 								<div class="col-sm-8">
 									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu'), 'class="radio-inline"'); ?>
 									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the topmenu.'); ?></p>
-									<?php if (count($folders) > 1): // add extra information about subfolders ?>
+									<?php if (count($folders) > 1): // add extra information about subfolders  ?>
 										<p class="small text-muted"><?php echo I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.'); ?></p>
 									<?php endif; ?>
 								</div>
 							</div>
-							<?php if (count($folders) > 1): // only show this option if we have subfolders ?>
+							<?php if (count($folders) > 1): // only show this option if we have subfolders  ?>
 								<!-- SHOW SUBFOLDERS -->
 								<div id="subfolders" class="form-group form-group-sm">
 									<label class="control-label col-sm-4">
@@ -465,7 +464,7 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 				<?php echo I18N::translate('Save'); ?>
 			</button>
 			<button class="btn btn-primary" type="reset" onclick="if (confirm('<?php echo I18N::translate('The settings will be reset to default. Are you sure you want to do this?'); ?>'))
-								window.location.href = 'module.php?mod=<?php echo $this->getName(); ?>&amp;mod_action=admin_reset';">
+						window.location.href = 'module.php?mod=<?php echo $this->getName(); ?>&amp;mod_action=admin_reset';">
 				<i class="fa fa-recycle"></i>
 				<?php echo I18N::translate('Reset'); ?>
 			</button>
