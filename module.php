@@ -20,14 +20,15 @@ use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Controller\PageController;
 use Fisharebest\Webtrees\Database;
 use Fisharebest\Webtrees\Filter;
-use Fisharebest\Webtrees\FlashMessages;
 use Fisharebest\Webtrees\Functions\FunctionsEdit;
 use Fisharebest\Webtrees\I18N;
-use Fisharebest\webtrees\Log;
+use Fisharebest\Webtrees\Log;
 use Fisharebest\Webtrees\Module;
 use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use Fisharebest\Webtrees\Query\QueryMedia;
+use Fisharebest\Webtrees\Schema\MigrationInterface;
+use Fisharebest\Webtrees\Site;
 use Fisharebest\Webtrees\Tree;
 use PDOException;
 
@@ -36,8 +37,8 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 	public function __construct() {
 		parent::__construct('justlight_theme_options');
 
-		// update the database if neccessary
-		self::updateSchema();
+		// Update the database tables if neccessary.
+		self::updateSchema('\\' . __NAMESPACE__ . '\Schema', 'JL_SCHEMA_VERSION', 2);
 	}
 
 	// Extend Module
@@ -486,21 +487,23 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 		return 'module.php?mod=' . $this->getName() . '&amp;mod_action=admin_config';
 	}
 
-	/**
-	 * Make sure the database structure is up-to-date.
-	 * Update database when updating from a version prior then version 1.5.2.1
-	 * Version 1 update if the admin has logged in. A message will be shown to tell him all settings are reset to default.
-	 * Old db-entries will be removed.
-	 *
-	 */
-	protected static function updateSchema() {
+	/** {@inheritDoc} */
+	public static function updateSchema($namespace, $schema_name, $target_version) {
 		try {
-			Database::updateSchema(WT_ROOT . WT_MODULES_DIR . 'justlight_theme_options/db_schema/', 'JL_SCHEMA_VERSION', 2);
-		} catch (PDOException $ex) {
-			// The schema update scripts should never fail.  If they do, there is no clean recovery.
-			FlashMessages::addMessage($ex->getMessage(), 'danger');
-			header('Location: ' . WT_BASE_URL . 'site-unavailable.php');
-			throw $ex;
+			$current_version = (int) Site::getPreference($schema_name);
+		} catch (PDOException $e) {
+			// During initial installation, the site_preference table won’t exist.
+			$current_version = 0;
+		}
+
+		// Update the schema, one version at a time.
+		while ($current_version < $target_version) {
+			require_once WT_MODULES_DIR . 'justlight_theme_options/schema/migration' . $current_version . '.php';
+			$class = $namespace . '\\Migration' . $current_version;
+			/** @var MigrationInterface $migration */
+			$migration = new $class;
+			$migration->upgrade();
+			Site::setPreference($schema_name, ++$current_version);
 		}
 	}
 
