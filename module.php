@@ -16,6 +16,7 @@
  */
 namespace JustCarmen\WebtreesAddOns\JustLight;
 
+use Composer\Autoload\ClassLoader;
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Controller\PageController;
 use Fisharebest\Webtrees\Database;
@@ -27,18 +28,20 @@ use Fisharebest\Webtrees\Module;
 use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use Fisharebest\Webtrees\Query\QueryMedia;
-use Fisharebest\Webtrees\Schema\MigrationInterface;
-use Fisharebest\Webtrees\Site;
 use Fisharebest\Webtrees\Tree;
-use PDOException;
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
 
 	public function __construct() {
 		parent::__construct('justlight_theme_options');
 
+		// register the namespace
+		$loader = new ClassLoader();
+		$loader->addPsr4('JustCarmen\\WebtreesAddOns\\JustLight\\', WT_MODULES_DIR . $this->getName() . '/src');
+		$loader->register();
+
 		// Update the database tables if neccessary.
-		self::updateSchema('\\' . __NAMESPACE__ . '\Schema', 'JL_SCHEMA_VERSION', 2);
+		Database::updateSchema('\JustCarmen\WebtreesAddOns\JustLight\Schema', 'JL_SCHEMA_VERSION', 2);
 	}
 
 	// Extend Module
@@ -485,26 +488,6 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 	// Implement ModuleConfigInterface
 	public function getConfigLink() {
 		return 'module.php?mod=' . $this->getName() . '&amp;mod_action=admin_config';
-	}
-
-	/** {@inheritDoc} */
-	public static function updateSchema($namespace, $schema_name, $target_version) {
-		try {
-			$current_version = (int) Site::getPreference($schema_name);
-		} catch (PDOException $e) {
-			// During initial installation, the site_preference table won’t exist.
-			$current_version = 0;
-		}
-
-		// Update the schema, one version at a time.
-		while ($current_version < $target_version) {
-			require_once WT_MODULES_DIR . 'justlight_theme_options/schema/migration' . $current_version . '.php';
-			$class = $namespace . '\\Migration' . $current_version;
-			/** @var MigrationInterface $migration */
-			$migration = new $class;
-			$migration->upgrade();
-			Site::setPreference($schema_name, ++$current_version);
-		}
 	}
 
 }
