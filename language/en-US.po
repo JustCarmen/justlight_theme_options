@@ -1,77 +1,77 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: justblack theme options 1.5.0\n"
-"POT-Creation-Date: 2015-01-20 23:35+0100\n"
+"Project-Id-Version: JustLight Theme Options\n"
+"POT-Creation-Date: 2015-07-05 00:01+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Carmen Pijpers <carmen@justcarmen.nl>\n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
-#: modules_v3/justlight_theme_options/module.php:432
-msgid "Choose a folder as default for the main menu link"
-msgstr "Choose a folder as default for the main menu link"
-
-#: modules_v3/justlight_theme_options/module.php:462
+#: module.php:456
 msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
 msgstr "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
 
-#: modules_v3/justlight_theme_options/module.php:426
-msgid "If this option is set the media menu will be moved to the topmenu. The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
-msgstr "If this option is set the media menu will be moved to the topmenu. The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
+#: module.php:425
+msgid "If this option is set the media menu will be moved to the topmenu."
+msgstr "If this option is set the media menu will be moved to the topmenu."
 
-#: modules_v3/justlight_theme_options/module.php:446
+#: module.php:439
 msgid "If you set this option the results on the media list page will include subfolders."
 msgstr "If you set this option the results on the media list page will include subfolders."
 
-#: modules_v3/justlight_theme_options/module.php:407
+#: module.php:405
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 msgstr "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 
-#: modules_v3/justlight_theme_options/module.php:413
+#: module.php:411
 msgid "Include the reports topmenu in the compact 'View' topmenu?"
 msgstr "Include the reports topmenu in the compact 'View' topmenu?"
 
 #. I18N: Name of a module
-#: modules_v3/justlight_theme_options/module.php:53
+#: module.php:49
 msgid "JustLight Theme Options"
 msgstr "JustLight Theme Options"
 
-#: modules_v3/justlight_theme_options/module.php:422
+#: module.php:421
 msgid "Media menu in topmenu"
 msgstr "Media menu in topmenu"
 
-#: modules_v3/justlight_theme_options/module.php:395
+#: module.php:375
 msgid "Options"
 msgstr "Options"
 
-#: modules_v3/justlight_theme_options/module.php:284
+#: module.php:270
 msgid "Options for the JustLight theme"
 msgstr "Options for the JustLight theme"
 
 #. I18N: Description of the module
-#: modules_v3/justlight_theme_options/module.php:58
+#: module.php:54
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Set options for the JustLight theme within the admin interface"
 
-#: modules_v3/justlight_theme_options/module.php:456
+#: module.php:383
+msgid "Size of the Family tree title"
+msgstr "Size of the Family tree title"
+
+#: module.php:450
 msgid "Sort Topmenu items"
 msgstr "Sort Topmenu items"
 
-#: modules_v3/justlight_theme_options/module.php:437
-msgid "The media folder you choose here will be used as default folder for media menu link of the main menu. If you click on the media link or icon in the main menu, the page opens with the media items from this folder."
-msgstr "The media folder you choose here will be used as default folder for media menu link of the main menu. If you click on the media link or icon in the main menu, the page opens with the media items from this folder."
+#: module.php:427
+msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
+msgstr "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 
-#: modules_v3/justlight_theme_options/module.php:482
+#: module.php:479
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "The settings will be reset to default. Are you sure you want to do this?"
 
-#: modules_v3/justlight_theme_options/module.php:403
+#: module.php:401
 msgid "Use a compact menu?"
 msgstr "Use a compact menu?"
