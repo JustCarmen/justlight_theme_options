@@ -26,6 +26,11 @@ use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use JustCarmen\WebtreesAddOns\JustLight\Template\AdminTemplate;
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
+	
+	// How to update the database schema for this module
+	const SCHEMA_TARGET_VERSION = 2;
+	const SCHEMA_SETTING_NAME = 'JL_SCHEMA_VERSION';
+	const SCHEMA_MIGRATION_PREFIX = '\JustCarmen\WebtreesAddOns\JustLight\Schema';
 
 	/** @var string location of the JustBlack Theme Options module files */
 	var $directory;
@@ -39,9 +44,6 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 		$loader = new ClassLoader();
 		$loader->addPsr4('JustCarmen\\WebtreesAddOns\\JustLight\\', $this->directory . '/src');
 		$loader->register();
-
-		// Update the database tables if neccessary.
-		Database::updateSchema('\JustCarmen\WebtreesAddOns\JustLight\Schema', 'JL_SCHEMA_VERSION', 2);
 	}
 
 	/**
@@ -65,6 +67,8 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 
 	// Extend ModuleConfigInterface
 	public function modAction($mod_action) {
+		Database::updateSchema(self::SCHEMA_MIGRATION_PREFIX, self::SCHEMA_SETTING_NAME, self::SCHEMA_TARGET_VERSION);
+		
 		switch ($mod_action) {
 			case 'admin_config':
 				if (Filter::postBool('save') && Filter::checkCsrf()) {
