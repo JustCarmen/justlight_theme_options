@@ -162,17 +162,15 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 
 		$MEDIA_DIRECTORY = $WT_TREE->getPreference('MEDIA_DIRECTORY');
 		$folders = QueryMedia::folderList();
-
+		array_shift($folders);		
+		$folderlist[$MEDIA_DIRECTORY] = strtoupper(I18N::translate(substr($MEDIA_DIRECTORY, 0, -1)));
+		
 		foreach ($folders as $key => $value) {
-			if ($key == null && empty($value)) {
-				$folderlist[$MEDIA_DIRECTORY] = strtoupper(I18N::translate(substr($MEDIA_DIRECTORY, 0, -1)));
-			} else {
-				if (count(glob(WT_DATA_DIR . $MEDIA_DIRECTORY . $value . '*')) > 0) {
-					$folder = array_filter(explode("/", $value));
-					// only list first level folders
-					if (!empty($folder) && !array_search($folder[0], $folderlist)) {
-						$folderlist[$folder[0] . '/'] = I18N::translate($folder[0]);
-					}
+			if (count(glob(WT_DATA_DIR . $MEDIA_DIRECTORY . $value . '*')) > 0) {
+				$folder = array_filter(explode("/", $value));
+				// only list first level folders
+				if (!empty($folder) && !array_search($folder[0], $folderlist)) {
+					$folderlist[$folder[0] . '/'] = I18N::translate($folder[0]);
 				}
 			}
 		}
