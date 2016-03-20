@@ -19,11 +19,14 @@ namespace JustCarmen\WebtreesAddOns\JustLight;
 use Composer\Autoload\ClassLoader;
 use Fisharebest\Webtrees\Database;
 use Fisharebest\Webtrees\Filter;
+use Fisharebest\Webtrees\FlashMessages;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Log;
 use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use JustCarmen\WebtreesAddOns\JustLight\Template\AdminTemplate;
+
+define('JLO_VERSION', '1.7.4');
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
 	
@@ -62,7 +65,7 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 
 	// Extend Module
 	public function getDescription() {
-		return /* I18N: Description of the module */ I18N::translate('Set options for the JustLight theme within the admin interface');
+		return /* I18N: Description of the module */ I18N::translate('Set options for the JustLight theme within the admin interface') . '<br><span class="small text-muted">' . I18N::translate('Version') . ' ' . JLO_VERSION . ' | by JustCarmen | <a href="http://www.justcarmen.nl/themes/justlight/">' . I18N::translate('Show details') . '</a></span>';
 	}
 
 	// Extend ModuleConfigInterface
