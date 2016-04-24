@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-03-20 22:17+0100\n"
+"POT-Creation-Date: 2016-04-24 22:43+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hermann Hartenthaler <hermann@hartenthaler.de>\n"
 "Language-Team: \n"
@@ -31,7 +31,8 @@ msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and 
 msgstr ""
 
 #: src/Template/AdminTemplate.php:181
-msgid "Include the reports topmenu in the compact 'View' topmenu?"
+#, fuzzy
+msgid "Include the reports topmenu in the compact “View” topmenu?"
 msgstr "Verschieben der Liste der Berichte aus dem Hauptmenü in ein Untermenü von \"Zeige\"?"
 
 #. I18N: Name of a module
@@ -57,7 +58,7 @@ msgid "Set options for the JustLight theme within the admin interface"
 msgstr ""
 
 #: src/Template/AdminTemplate.php:153
-msgid "Size of the Family tree title"
+msgid "Size of the family tree title"
 msgstr ""
 
 #: src/Template/AdminTemplate.php:220

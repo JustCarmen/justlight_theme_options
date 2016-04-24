@@ -150,7 +150,7 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<!-- TREE TITLE SIZE -->
 							<div id="title-size" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Size of the Family tree title') ?>
+									<?php echo I18N::translate('Size of the family tree title') ?>
 								</label>
 								<div class="col-sm-2">
 									<div class="input-group">
@@ -178,7 +178,7 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<!-- REPORTS -->
 							<div id="reports" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Include the reports topmenu in the compact \'View\' topmenu?') ?>
+									<?php echo I18N::translate('Include the reports topmenu in the compact “View” topmenu?') ?>
 								</label>
 								<div class="col-sm-8">
 									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU_REPORTS]', $this->options('compact_menu_reports'), 'class="radio-inline"') ?>
