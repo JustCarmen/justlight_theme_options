@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-03-20 22:17+0100\n"
-"PO-Revision-Date: 2016-04-21 17:51+0000\n"
+"PO-Revision-Date: 2016-04-24 10:33+0000\n"
 "Last-Translator: Martin Pannier <der@bauschaffen.de>\n"
 "Language-Team: German <https://translate.webtrees.net/projects/justcarmen/fancy-justlight-theme-options/de/>\n"
 "Language: de\n"
@@ -20,41 +20,41 @@ msgstr "Um die Einträge im Hauptmenü neu anzuordnen, verschieben Sie die Zeile
 
 #: src/Template/AdminTemplate.php:195
 msgid "If this option is set the media menu will be moved to the topmenu."
-msgstr ""
+msgstr "Ist diese Option aktiviert, wird das Medienmenü  ins Hauptmenü verschoben."
 
 #: src/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr "Wenn Sie diese Option auswählen, dann wird die Medienseite auch Unterordner enthalten."
+msgstr "Wenn Sie diese Option auswählen, dann werden unter \"Multimedia\" im Hauptmenü auch Unterordner angezeigt."
 
 #: src/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
-msgstr ""
+msgstr "Im kompakten Menü \"Zeige\" werden die Menüs Diagramme, Listen, Kalender und (optional) Berichte zusammen gruppiert."
 
 #: src/Template/AdminTemplate.php:181
 msgid "Include the reports topmenu in the compact 'View' topmenu?"
-msgstr "Verschieben der Liste der Berichte aus dem Hauptmenü in ein Untermenü von \"Zeige\"?"
+msgstr "Menüpunkt \"Berichte\" in das kompakten Hauptmenü \"Zeige\" als Untermenü verschieben?"
 
 #. I18N: Name of a module
 #: module.php:63
 msgid "JustLight Theme Options"
-msgstr ""
+msgstr "JustLight Theme Einstellungen"
 
 #: src/Template/AdminTemplate.php:191
 msgid "Media menu in topmenu"
-msgstr ""
+msgstr "Medienmenü als Hauptmenü"
 
 #: src/Template/AdminTemplate.php:145
 msgid "Options"
-msgstr ""
+msgstr "Einstellungen"
 
 #: src/Template/AdminTemplate.php:38
 msgid "Options for the JustLight theme"
-msgstr ""
+msgstr "Einstellungen für das JustLight theme"
 
 #. I18N: Description of the module
 #: module.php:68
 msgid "Set options for the JustLight theme within the admin interface"
-msgstr ""
+msgstr "Einstellungen für das JustLight Theme im Verwaltungsbereich setzen"
 
 #: src/Template/AdminTemplate.php:153
 msgid "Size of the Family tree title"
@@ -66,11 +66,11 @@ msgstr "Einträge im Hauptmenü sortieren"
 
 #: src/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
-msgstr "Hiermit wird das Medienmenü ins Hauptmenü verschoben. Die Namen der Unterverzeichnisse auf der ersten Ebene erscheinen als Untermenü im neuen Menü \"Multimedia\".</p><p>Achtung: Diese Untermenüpunkte werden nicht automatisch übersetzt. Um die Einträge zu übersetzen, sollten Sie sich nach den Anweisungen im WIKI von webtrees richten."
+msgstr "Die Namen der Unterverzeichnisse auf der ersten Ebene im Medienordner auf dem Server werden als Untermenü im neuen Menü \"Multimedia\" genutzt. Achtung: Diese Untermenüpunkte werden nicht automatisch übersetzt. Nutzen Sie ein eigene Sprachdatei, um die Menüpunkte zu übersetzen. Mehr Informationen dazu finden Sie im WIKI von webtrees."
 
 #: src/Template/AdminTemplate.php:249
 msgid "The settings will be reset to default. Are you sure you want to do this?"
-msgstr "Die Einstellungen werden auf die Standardwerte zurückgesetzt. Wollen Sie das wirklich?"
+msgstr "Die Einstellungen werden auf die Standardwerte zurückgesetzt. Sind Sie sicher, dass Sie dies tun wollen?"
 
 #: src/Template/AdminTemplate.php:171
 msgid "Use a compact menu?"
