@@ -14,8 +14,12 @@ On the JustLight Theme Options configuration page you can set the following opti
 * Move the media menu link to the topmenu.
 * Order the main menu items. Ordering menu items here is more flexible then the sort option webtrees offers by default. Here you can shuffle ALL main menu items (except the homepage and my page menu). 
 
-Installation, upgrading and translations
-----------------------------------------
+Translations
+------------
+You can help to translate this module. Updates to translations should be made at https://translate.webtrees.net/projects/justcarmen/. Changes made there will be pushed to the git repository periodically and will be available on the development version of the module. They will be included in the next release of this module.
+
+Installation & upgrading
+------------------------
 For more information about these subjects go to the JustCarmen help pages: http://www.justcarmen.nl/help. You will find there other tips as well.
 
 Bugs and feature requests
