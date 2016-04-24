@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-03-20 22:17+0100\n"
-"PO-Revision-Date: 2016-04-24 10:33+0000\n"
+"PO-Revision-Date: 2016-04-24 10:53+0000\n"
 "Last-Translator: Martin Pannier <der@bauschaffen.de>\n"
 "Language-Team: German <https://translate.webtrees.net/projects/justcarmen/fancy-justlight-theme-options/de/>\n"
 "Language: de\n"
@@ -20,11 +20,11 @@ msgstr "Um die Einträge im Hauptmenü neu anzuordnen, verschieben Sie die Zeile
 
 #: src/Template/AdminTemplate.php:195
 msgid "If this option is set the media menu will be moved to the topmenu."
-msgstr "Ist diese Option aktiviert, wird das Medienmenü  ins Hauptmenü verschoben."
+msgstr "Ist diese Option aktiviert, wird das Medienmenü ins Hauptmenü verschoben."
 
 #: src/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr "Wenn Sie diese Option auswählen, dann werden unter \"Multimedia\" im Hauptmenü auch Unterordner angezeigt."
+msgstr "Wenn Sie diese Option aktivieren, werden im Hauptmenüpunkt \"Multimedia\" vorhandene Unterordner angezeigt."
 
 #: src/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
@@ -41,7 +41,7 @@ msgstr "JustLight Theme Einstellungen"
 
 #: src/Template/AdminTemplate.php:191
 msgid "Media menu in topmenu"
-msgstr "Medienmenü als Hauptmenü"
+msgstr "Medienmenü als Hauptmenü?"
 
 #: src/Template/AdminTemplate.php:145
 msgid "Options"
@@ -49,7 +49,7 @@ msgstr "Einstellungen"
 
 #: src/Template/AdminTemplate.php:38
 msgid "Options for the JustLight theme"
-msgstr "Einstellungen für das JustLight theme"
+msgstr "Einstellungen für das JustLight Theme"
 
 #. I18N: Description of the module
 #: module.php:68
@@ -66,7 +66,7 @@ msgstr "Einträge im Hauptmenü sortieren"
 
 #: src/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
-msgstr "Die Namen der Unterverzeichnisse auf der ersten Ebene im Medienordner auf dem Server werden als Untermenü im neuen Menü \"Multimedia\" genutzt. Achtung: Diese Untermenüpunkte werden nicht automatisch übersetzt. Nutzen Sie ein eigene Sprachdatei, um die Menüpunkte zu übersetzen. Mehr Informationen dazu finden Sie im WIKI von webtrees."
+msgstr "Die Namen der Unterverzeichnisse auf der ersten Ebene im Medienordner auf dem Server werden als Untermenü im neuen Menü \"Multimedia\" genutzt.<br /><br /><strong>Achtung: Diese Untermenüpunkte werden nicht automatisch übersetzt. Nutzen Sie ein eigene Sprachdatei, um die Menüpunkte zu übersetzen. Mehr Informationen dazu finden Sie im WIKI von webtrees.</strong>"
 
 #: src/Template/AdminTemplate.php:249
 msgid "The settings will be reset to default. Are you sure you want to do this?"
@@ -74,4 +74,4 @@ msgstr "Die Einstellungen werden auf die Standardwerte zurückgesetzt. Sind Sie 
 
 #: src/Template/AdminTemplate.php:171
 msgid "Use a compact menu?"
-msgstr "Kompaktes Menü für Diagramme, Listen etc. verwenden?"
+msgstr "Kompaktes Menü für Diagramme, Listen, Kalendar verwenden?"
