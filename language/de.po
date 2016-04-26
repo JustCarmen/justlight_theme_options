@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-04-24 22:43+0200\n"
-"PO-Revision-Date: 2016-04-26 14:09+0000\n"
+"PO-Revision-Date: 2016-04-29 12:02+0000\n"
 "Last-Translator: Martin Pannier <der@bauschaffen.de>\n"
 "Language-Team: German <https://translate.webtrees.net/projects/justcarmen/fancy-justlight-theme-options/de/>\n"
 "Language: de\n"
@@ -57,7 +57,6 @@ msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Einstellungen für das JustLight Theme im Verwaltungsbereich setzen"
 
 #: src/Template/AdminTemplate.php:153
-#, fuzzy
 msgid "Size of the family tree title"
 msgstr "Größe des Stammbaumtitels"
 
