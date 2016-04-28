@@ -58,7 +58,8 @@ msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Einstellungen für das JustLight Theme im Verwaltungsbereich setzen"
 
 #: src/Template/AdminTemplate.php:153
-msgid "Size of the Family tree title"
+#, fuzzy
+msgid "Size of the family tree title"
 msgstr "Größe des Stammbaumtitels"
 
 #: src/Template/AdminTemplate.php:220
