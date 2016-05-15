@@ -26,7 +26,7 @@ use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use JustCarmen\WebtreesAddOns\JustLight\Template\AdminTemplate;
 
-define('JLO_VERSION', '1.7.4');
+define('JLO_VERSION', '1.7.5-dev');
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
 	
@@ -45,7 +45,7 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 
 		// register the namespace
 		$loader = new ClassLoader();
-		$loader->addPsr4('JustCarmen\\WebtreesAddOns\\JustLight\\', $this->directory . '/src');
+		$loader->addPsr4('JustCarmen\\WebtreesAddOns\\JustLight\\', $this->directory . '/app');
 		$loader->register();
 	}
 
