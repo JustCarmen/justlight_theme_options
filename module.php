@@ -30,6 +30,9 @@ define('JLO_VERSION', '1.7.5-dev');
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
 	
+	const CUSTOM_VERSION = '1.7.5-dev';
+	const CUSTOM_WEBSITE = 'http://www.justcarmen.nl/themes/justlight/';
+	
 	// How to update the database schema for this module
 	const SCHEMA_TARGET_VERSION = 2;
 	const SCHEMA_SETTING_NAME = 'JL_SCHEMA_VERSION';
@@ -65,7 +68,7 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 
 	// Extend Module
 	public function getDescription() {
-		return /* I18N: Description of the module */ I18N::translate('Set options for the JustLight theme within the admin interface') . '<br><span class="small text-muted">' . I18N::translate('Version') . ' ' . JLO_VERSION . ' | by JustCarmen | <a href="http://www.justcarmen.nl/themes/justlight/">' . I18N::translate('Show details') . '</a></span>';
+		return /* I18N: Description of the module */ I18N::translate('Set options for the JustLight theme within the admin interface');
 	}
 
 	// Extend ModuleConfigInterface
