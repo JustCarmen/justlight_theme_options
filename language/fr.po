@@ -2,75 +2,75 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-04-24 22:43+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: phicome <phicome@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2016-06-23 20:28+0000\n"
+"Last-Translator: Michael <mike_jpr@outlook.com>\n"
+"Language-Team: French <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
 #: src/Template/AdminTemplate.php:226
 msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
-msgstr "Cliquez sur une ligne, puis faites un glisser-déposer pour réorganiser les éléments du menu. Cliquez ensuite sur le bouton Enregistrer."
+msgstr "Cliquez sur une ligne, puis faites un glisser-déposer pour réorganiser les éléments du menu principal. Cliquez ensuite sur le bouton « enregistrer »."
 
 #: src/Template/AdminTemplate.php:195
 msgid "If this option is set the media menu will be moved to the topmenu."
-msgstr ""
+msgstr "Si cette option est activée, le menu « Média » est déplacé dans le menu principal."
 
 #: src/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr ""
+msgstr "Si vous sélectionnez cette option, les sous-dossiers existants sont affichés dans le menu principal « Média »."
 
 #: src/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
-msgstr ""
+msgstr "Dans le menu compact le menu « Afficher » regroupe les menus « Diagrammes », « Listes », « Calendrier » et (en option) « Rapports »."
 
 #: src/Template/AdminTemplate.php:181
 msgid "Include the reports topmenu in the compact “View” topmenu?"
-msgstr "Inclure le menu rapports dans le menu compact ?"
+msgstr "Inclure le menu « Rapports » dans le menu « Afficher » dans le menu compact ?"
 
 #. I18N: Name of a module
 #: module.php:63
 msgid "JustLight Theme Options"
-msgstr ""
+msgstr "Paramètres du thème JustLight"
 
 #: src/Template/AdminTemplate.php:191
 msgid "Media menu in topmenu"
-msgstr ""
+msgstr "Ajouter un menu « Média » dans le menu principal ?"
 
 #: src/Template/AdminTemplate.php:145
 msgid "Options"
-msgstr ""
+msgstr "Paramètres"
 
 #: src/Template/AdminTemplate.php:38
 msgid "Options for the JustLight theme"
-msgstr ""
+msgstr "Paramètres pour le thème JustLight"
 
 #. I18N: Description of the module
 #: module.php:68
 msgid "Set options for the JustLight theme within the admin interface"
-msgstr ""
+msgstr "Definir les paramètres pour le thème JustLight dans l'administration des modules"
 
 #: src/Template/AdminTemplate.php:153
 msgid "Size of the family tree title"
-msgstr ""
+msgstr "Taille du titre de l'arbre généalogique"
 
 #: src/Template/AdminTemplate.php:220
 msgid "Sort Topmenu items"
-msgstr "Tri des items du menu"
+msgstr "Trier les éléments dans le menu principal"
 
 #: src/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
-msgstr "Si cette option est activée, un nouveau menu Média sera ajouté aux menus principaux. Le nom des dossiers de médias apparaitront comme sous-menu du nouveau menu Média.</p><p>Attention : Ces liens de sous-menu ne sont pas traduits automatiquement. Pour les traduire, il faut le faire manuellement (voir les instructions dans le WIKI de webtrees)."
+msgstr "Si cette option est activée, un nouveau menu « Média » sera ajouté au menu principal. Le nom des dossiers de médias apparaitront comme sous-menu du nouveau menu « Média ». Attention : Ces sous-menus ne sont pas traduits automatiquement. Pour les traduire, il faut le faire manuellement. Voir les instructions dans le WIKI de webtrees."
 
 #: src/Template/AdminTemplate.php:249
 msgid "The settings will be reset to default. Are you sure you want to do this?"
-msgstr ""
+msgstr "Les paramètres seront réinitialisés aux valeurs par défaut. Êtes-vous sûr de vouloir faire ça ?"
 
 #: src/Template/AdminTemplate.php:171
 msgid "Use a compact menu?"
