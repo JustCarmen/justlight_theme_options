@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-07-08 09:32+0200\n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2016-07-08 08:03+0000\n"
 "Last-Translator: Carmen Pijpers <carmen@justcarmen.nl>\n"
 "Language-Team: Dutch <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/nl/>\n"
 "Language: nl\n"
@@ -16,11 +16,11 @@ msgstr ""
 
 #: app/Template/AdminTemplate.php:226
 msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
-msgstr "Klik op een rij, sleep en laat los om de volgorde van de topmenu items te wijzigen. Klik daarna op de knop 'opslaan'."
+msgstr "Klik op een rij, sleep en laat los om de volgorde van de top menu items te wijzigen. Klik daarna op de knop 'opslaan'."
 
 #: app/Template/AdminTemplate.php:195
 msgid "If this option is set the media menu will be moved to the topmenu."
-msgstr "Als deze optie is ingeschakeld, wordt het media menu verplaatst naar het topmenu."
+msgstr "Als deze optie is ingeschakeld, wordt het media menu verplaatst naar het top menu."
 
 #: app/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
@@ -32,7 +32,7 @@ msgstr "In het compacte “Bekijk”-menu worden de menu's voor Diagrammen, Lijs
 
 #: app/Template/AdminTemplate.php:181
 msgid "Include the reports topmenu in the compact “View” topmenu?"
-msgstr "Wilt u het menu rapporten opnemen in het compacte 'Bekijk' menu?"
+msgstr "Wilt u het menu rapporten opnemen in het compacte “Bekijk” menu?"
 
 #. I18N: Name of a module
 #: module.php:66
@@ -62,7 +62,7 @@ msgstr "Grootte van de stamboom titel"
 
 #: app/Template/AdminTemplate.php:220
 msgid "Sort Topmenu items"
-msgstr "Topmenu items sorteren"
+msgstr "Top menu items sorteren"
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
