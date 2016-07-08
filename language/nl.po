@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-04-24 22:43+0200\n"
+"POT-Creation-Date: 2016-07-08 09:32+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Carmen Pijpers <carmen@justcarmen.nl>\n"
 "Language-Team: Dutch <https://translate.webtrees.net/projects/justcarmen/fancy-justlight-theme-options/nl/>\n"
@@ -14,64 +14,64 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
-#: src/Template/AdminTemplate.php:226
+#: app/Template/AdminTemplate.php:226
 msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
 msgstr "Klik op een rij, sleep en laat los om de volgorde van de topmenu items te wijzigen. Klik daarna op de knop 'opslaan'."
 
-#: src/Template/AdminTemplate.php:195
+#: app/Template/AdminTemplate.php:195
 msgid "If this option is set the media menu will be moved to the topmenu."
 msgstr "Als deze optie is ingeschakeld, wordt het media menu verplaatst naar het topmenu."
 
-#: src/Template/AdminTemplate.php:209
+#: app/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
 msgstr "Wanneer u deze optie instelt worden de resultaten op de media pagina getoond inclusief submappen."
 
-#: src/Template/AdminTemplate.php:175
+#: app/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 msgstr "In het compacte “Bekijk”-menu worden de menu's voor Diagrammen, Lijsten, Kalender en (optioneel) Rapporten, samengevoegd."
 
-#: src/Template/AdminTemplate.php:181
+#: app/Template/AdminTemplate.php:181
 msgid "Include the reports topmenu in the compact “View” topmenu?"
 msgstr "Wilt u het menu rapporten opnemen in het compacte “Bekijk” menu?"
 
 #. I18N: Name of a module
-#: module.php:63
+#: module.php:66
 msgid "JustLight Theme Options"
 msgstr "JustLight Thema Opties"
 
-#: src/Template/AdminTemplate.php:191
+#: app/Template/AdminTemplate.php:191
 msgid "Media menu in topmenu"
 msgstr "Media menu in hoofdmenu"
 
-#: src/Template/AdminTemplate.php:145
+#: app/Template/AdminTemplate.php:145
 msgid "Options"
 msgstr "Opties"
 
-#: src/Template/AdminTemplate.php:38
+#: app/Template/AdminTemplate.php:38
 msgid "Options for the JustLight theme"
 msgstr "Opties voor het JustLight thema"
 
 #. I18N: Description of the module
-#: module.php:68
+#: module.php:71
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Zet opties voor het JustLight thema vanuit de administratie interface"
 
-#: src/Template/AdminTemplate.php:153
+#: app/Template/AdminTemplate.php:153
 msgid "Size of the family tree title"
 msgstr "Grootte van de stamboomtitel"
 
-#: src/Template/AdminTemplate.php:220
+#: app/Template/AdminTemplate.php:220
 msgid "Sort Topmenu items"
 msgstr "Topmenu items sorteren"
 
-#: src/Template/AdminTemplate.php:197
+#: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "De namen van de mappen direct onder de hoofdmap verschijnen als submenu in het nieuwe media menu. Waarschuwing: deze submenu items worden niet automatisch vertaald. Gebruik een aangepast taalbestand om uw menu items te vertalen. Lees de webtrees WIKI voor meer informatie."
 
-#: src/Template/AdminTemplate.php:249
+#: app/Template/AdminTemplate.php:249
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "De standaardinstellingen worden teruggezet. Weet u zeker dat u dit wilt?"
 
-#: src/Template/AdminTemplate.php:171
+#: app/Template/AdminTemplate.php:171
 msgid "Use a compact menu?"
 msgstr "Gebruik een compact menu?"
