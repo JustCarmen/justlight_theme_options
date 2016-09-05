@@ -2,39 +2,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-07-08 09:32+0200\n"
-"PO-Revision-Date: 2015-07-05 00:01+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-09-05 03:21+0000\n"
+"Last-Translator: Thomas Rindal <thomas@rindal.net>\n"
+"Language-Team: Norwegian Bokmål <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Weblate 2.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: app/Template/AdminTemplate.php:226
+#, fuzzy
 msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
-msgstr ""
+msgstr "Klikk på en rad, dra og slipp for å endre rekkefølge på topp-meny-elementene. Klikk deretter \"lagre\"-knappen."
 
 #: app/Template/AdminTemplate.php:195
+#, fuzzy
 msgid "If this option is set the media menu will be moved to the topmenu."
-msgstr ""
+msgstr "Hvis dette alternativet er valgt vil mediamenyen bli flyttet til toppmenyen."
 
 #: app/Template/AdminTemplate.php:209
+#, fuzzy
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr ""
+msgstr "Hvis du setter dette alternativet vil resultatene på medialistesiden inkludere undermapper."
 
 #: app/Template/AdminTemplate.php:175
+#, fuzzy
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
-msgstr ""
+msgstr "I den kompakte \"View\" -menyen vil menyene for diagrammer, lister, kalender og (eventuelt) Rapporter bli flettet sammen."
 
 #: app/Template/AdminTemplate.php:181
+#, fuzzy
 msgid "Include the reports topmenu in the compact “View” topmenu?"
-msgstr ""
+msgstr "Inkluder rapporter i toppmenyen i den kompakte \"view\" toppmenyen?"
 
 #. I18N: Name of a module
 #: module.php:66
