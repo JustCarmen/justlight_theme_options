@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-07-08 09:32+0200\n"
+"POT-Creation-Date: 2016-09-25 01:22+0200\n"
 "PO-Revision-Date: 2016-07-08 08:03+0000\n"
 "Last-Translator: Carmen Pijpers <carmen@justcarmen.nl>\n"
 "Language-Team: Dutch <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/nl/>\n"
@@ -35,7 +35,7 @@ msgid "Include the reports topmenu in the compact “View” topmenu?"
 msgstr "Wilt u het menu rapporten opnemen in het compacte “Bekijk” menu?"
 
 #. I18N: Name of a module
-#: module.php:66
+#: module.php:64
 msgid "JustLight Theme Options"
 msgstr "JustLight Thema Opties"
 
@@ -52,7 +52,7 @@ msgid "Options for the JustLight theme"
 msgstr "Opties voor het JustLight thema"
 
 #. I18N: Description of the module
-#: module.php:71
+#: module.php:69
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Zet opties voor het JustLight thema vanuit de administratie interface"
 
