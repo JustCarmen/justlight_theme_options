@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-09-25 01:22+0200\n"
-"PO-Revision-Date: 2016-07-09 17:12+0000\n"
-"Last-Translator: Jamie Jaconelli <jamie@jaconelli.dk>\n"
+"PO-Revision-Date: 2016-10-03 19:46+0000\n"
+"Last-Translator: Patrick Kongshammer <patrickkongshammer@gmail.com>\n"
 "Language-Team: Danish <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.5\n"
+"X-Generator: Weblate 2.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
@@ -18,23 +18,23 @@ msgstr ""
 
 #: app/Template/AdminTemplate.php:226
 msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
-msgstr "Klik på en række, derefter brug \"træk og slip\" for at sortere topmenuerne. Afslut med \"gem\" knappen."
+msgstr "Klik på en række, og brug derefter \"Træk-og-slip\" for at sortere menupunkterne. Klik derefter på knappen \"gem\"."
 
 #: app/Template/AdminTemplate.php:195
 msgid "If this option is set the media menu will be moved to the topmenu."
-msgstr "Hvis denne indstilling er valgt så vil medie menuen blive flyttet til topmenuen."
+msgstr "Hvis denne indstilling er valgt vil medie menuen blive flyttet til topmenuen."
 
 #: app/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr "Hvis denne indstilling er valgt vil medielist siden også inkl. undermapper."
+msgstr "Hvis du vælger denne indstillinger vil resultaterne på siden med medier inkludere undermapper."
 
 #: app/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
-msgstr "Ved kompakt \"Vis-menu\" for menuerne diagrammer, lister, kalender og valgfrie rapporter blive lagt i samme menu."
+msgstr "Diagrammer, lister, kalender og (valgfrit) rapporter vil blive lagt sammen i den kompakte \"Vis\"-menu"
 
 #: app/Template/AdminTemplate.php:181
 msgid "Include the reports topmenu in the compact “View” topmenu?"
-msgstr "Inkludér rapport menuen i den kompakte \"Vis\" menu?"
+msgstr "Inkludér rapportmenuen i den kompakte \"Vis\" menu?"
 
 #. I18N: Name of a module
 #: module.php:64
@@ -72,7 +72,7 @@ msgstr "Navnene på første niveau af mediemapperne fra mediemappe på din serve
 
 #: app/Template/AdminTemplate.php:249
 msgid "The settings will be reset to default. Are you sure you want to do this?"
-msgstr "Indstillingerne vil blive nulstillet til standard. Er du sikker på du vil gøre dette?"
+msgstr "Indstillingerne vil blive fabriksnulstillet. Er du sikker på du vil gøre dette?"
 
 #: app/Template/AdminTemplate.php:171
 msgid "Use a compact menu?"
