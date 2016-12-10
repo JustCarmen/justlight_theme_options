@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-09-25 01:22+0200\n"
-"PO-Revision-Date: 2015-07-05 00:01+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-12-10 18:51+0000\n"
+"Last-Translator: Gyönyör János <gyj@centrum.sk>\n"
+"Language-Team: Hungarian <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Weblate 2.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
@@ -18,62 +18,62 @@ msgstr ""
 
 #: app/Template/AdminTemplate.php:226
 msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
-msgstr ""
+msgstr "Klikk a sorra, majd egérrel fogd-és-vidd a kívánt sorrendbe. Végül klikk a “mentés” gombra."
 
 #: app/Template/AdminTemplate.php:195
 msgid "If this option is set the media menu will be moved to the topmenu."
-msgstr ""
+msgstr "E lehetőség kiválasztásával a média menü a főmenübe kerül."
 
 #: app/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr ""
+msgstr "E lehetőség kiválasztása eredményezi az almappák megjelenését a média felsorolás oldalon."
 
 #: app/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
-msgstr ""
+msgstr "A tömörített “Megtekintés” menübe lesznek az Ábra, Lista, Naptár és (választhatóan) a Jelentés menük összevonva."
 
 #: app/Template/AdminTemplate.php:181
 msgid "Include the reports topmenu in the compact “View” topmenu?"
-msgstr ""
+msgstr "Tartalmazza az tömörített “Megtekintés” főmenü a Jelentések menüt?"
 
 #. I18N: Name of a module
 #: module.php:64
 msgid "JustLight Theme Options"
-msgstr ""
+msgstr "JustLight Téma beállításai"
 
 #: app/Template/AdminTemplate.php:191
 msgid "Media menu in topmenu"
-msgstr ""
+msgstr "Média menü a főmenüben"
 
 #: app/Template/AdminTemplate.php:145
 msgid "Options"
-msgstr ""
+msgstr "Beállítások"
 
 #: app/Template/AdminTemplate.php:38
 msgid "Options for the JustLight theme"
-msgstr ""
+msgstr "A JustLight téma beállításai"
 
 #. I18N: Description of the module
 #: module.php:69
 msgid "Set options for the JustLight theme within the admin interface"
-msgstr ""
+msgstr "A JustLight téma beállításainak módosítása a vezérlőpulton"
 
 #: app/Template/AdminTemplate.php:153
 msgid "Size of the family tree title"
-msgstr ""
+msgstr "A családfa nevének nagysága"
 
 #: app/Template/AdminTemplate.php:220
 msgid "Sort Topmenu items"
-msgstr ""
+msgstr "A Főmenü elrendezése"
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
-msgstr ""
+msgstr "A média menüének almenü elemei a szerveren lévő média mappa első szintű mappái neveit használja. Figyelem: Ezek az almenü elemek nincsenek automatikusan lefordítva. Használjon saját nyelvi fájlt a menü elemeinek lefordítására. Részletesebb információ a webtrees WIKI oldalán található."
 
 #: app/Template/AdminTemplate.php:249
 msgid "The settings will be reset to default. Are you sure you want to do this?"
-msgstr ""
+msgstr "A beállítások alapértékeinek visszaállítása. Biztos benne, hogy ezt akarja?"
 
 #: app/Template/AdminTemplate.php:171
 msgid "Use a compact menu?"
-msgstr ""
+msgstr "Használjunk tömörített menüt?"
