@@ -168,7 +168,7 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<!-- COMPACT MENU -->
 							<div id="compact-menu" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Use a compact menu?') ?>
+									<?php echo I18N::translate('Use a compact menu') ?>
 								</label>
 								<div class="col-sm-8">
 									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU]', $this->options('compact_menu'), 'class="radio-inline"') ?>
@@ -178,7 +178,7 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<!-- REPORTS -->
 							<div id="reports" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Include the reports topmenu in the compact “View” topmenu?') ?>
+									<?php echo I18N::translate('Include the reports topmenu in the compact “View” topmenu') ?>
 								</label>
 								<div class="col-sm-8">
 									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU_REPORTS]', $this->options('compact_menu_reports'), 'class="radio-inline"') ?>
