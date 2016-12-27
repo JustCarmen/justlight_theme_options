@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-09-25 01:22+0200\n"
+"POT-Creation-Date: 2016-12-26 16:41+0100\n"
 "PO-Revision-Date: 2016-06-23 20:28+0000\n"
 "Last-Translator: Michael <mike_jpr@outlook.com>\n"
 "Language-Team: French <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/fr/>\n"
@@ -31,7 +31,8 @@ msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and 
 msgstr "Dans le menu compact le menu « Afficher » regroupe les menus « Diagrammes », « Listes », « Calendrier » et (en option) « Rapports »."
 
 #: app/Template/AdminTemplate.php:181
-msgid "Include the reports topmenu in the compact “View” topmenu?"
+#, fuzzy
+msgid "Include the reports topmenu in the compact “View” topmenu"
 msgstr "Inclure le menu « Rapports » dans le menu « Afficher » dans le menu compact ?"
 
 #. I18N: Name of a module
@@ -73,5 +74,6 @@ msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "Les paramètres seront réinitialisés aux valeurs par défaut. Êtes-vous sûr de vouloir faire ça ?"
 
 #: app/Template/AdminTemplate.php:171
-msgid "Use a compact menu?"
+#, fuzzy
+msgid "Use a compact menu"
 msgstr "Utiliser le menu compact ?"

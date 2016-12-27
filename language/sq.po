@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-09-25 01:22+0200\n"
+"POT-Creation-Date: 2016-12-26 16:41+0100\n"
 "PO-Revision-Date: 2016-06-07 14:59+0000\n"
 "Last-Translator: Astrit Bokshi <astritbokshi@gmail.com>\n"
 "Language-Team: Albanian <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/sq/>\n"
@@ -33,7 +33,8 @@ msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and 
 msgstr "Në menynë \"Dukja\" kompakte menytë për Grafe, Lista, Kalendare dhe (opcionalisht) Raporte do të bashkohen."
 
 #: app/Template/AdminTemplate.php:181
-msgid "Include the reports topmenu in the compact “View” topmenu?"
+#, fuzzy
+msgid "Include the reports topmenu in the compact “View” topmenu"
 msgstr "Përfshijë kryemenynë e raporteve në \"Dukja\" kompakte në kryemeny?"
 
 #. I18N: Name of a module
@@ -75,5 +76,6 @@ msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "Përkufizimet do të resetohen në të parazgjedhur. Jeni të sigurt?"
 
 #: app/Template/AdminTemplate.php:171
-msgid "Use a compact menu?"
+#, fuzzy
+msgid "Use a compact menu"
 msgstr "Përdorni menynë kompakte?"
