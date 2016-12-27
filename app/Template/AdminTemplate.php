@@ -178,7 +178,7 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<!-- REPORTS -->
 							<div id="reports" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Include the reports topmenu in the compact “View” topmenu') ?>
+									<?php echo I18N::translate('Include the reports menu in the compact “View” menu') ?>
 								</label>
 								<div class="col-sm-8">
 									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU_REPORTS]', $this->options('compact_menu_reports'), 'class="radio-inline"') ?>
@@ -188,11 +188,11 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<?php $folders = $this->options('mediafolders'); ?>
 							<div id="media-menu" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Media menu in topmenu') ?>
+									<?php echo I18N::translate('Media menu in main menu') ?>
 								</label>
 								<div class="col-sm-8">
 									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu'), 'class="radio-inline"') ?>
-									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the topmenu.') ?></p>
+									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the main menu.') ?></p>
 									<?php if (count($folders) > 1): // add extra information about subfolders  ?>
 										<p class="small text-muted"><?php echo I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.') ?></p>
 									<?php endif; ?>
@@ -217,13 +217,13 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 					<div class="panel-heading">
 						<h4 class="panel-title">
 							<a class="collapsed" href="#collapseTwo" data-target="#collapseTwo" data-toggle="collapse">
-								<?php echo I18N::translate('Sort Topmenu items') ?>
+								<?php echo I18N::translate('Sort menu items') ?>
 							</a>
 						</h4>
 					</div>
 					<div class="panel-collapse collapse" id="collapseTwo">
 						<div class="panel-heading">
-							<?php echo I18N::translate('Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button.') ?>
+							<?php echo I18N::translate('Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button.') ?>
 						</div>
 						<div class="panel-body">
 							<?php
