@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2016-12-26 16:41+0100\n"
-"PO-Revision-Date: 2016-07-08 08:03+0000\n"
+"PO-Revision-Date: 2016-12-27 06:57+0000\n"
 "Last-Translator: Carmen Pijpers <carmen@justcarmen.nl>\n"
 "Language-Team: Dutch <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/nl/>\n"
 "Language: nl\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.5\n"
+"X-Generator: Weblate 2.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
@@ -31,9 +31,8 @@ msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and 
 msgstr "In het compacte “Bekijk”-menu worden de menu's voor Diagrammen, Lijsten, Kalender en (optioneel) Rapporten, samengevoegd."
 
 #: app/Template/AdminTemplate.php:181
-#, fuzzy
 msgid "Include the reports topmenu in the compact “View” topmenu"
-msgstr "Wilt u het menu rapporten opnemen in het compacte “Bekijk” menu?"
+msgstr "Wilt u het menu rapporten opnemen in het compacte “Bekijk” menu"
 
 #. I18N: Name of a module
 #: module.php:64
@@ -74,6 +73,5 @@ msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "De standaardinstellingen worden teruggezet. Weet u zeker dat u dit wilt?"
 
 #: app/Template/AdminTemplate.php:171
-#, fuzzy
 msgid "Use a compact menu"
-msgstr "Gebruik een compact menu?"
+msgstr "Gebruik een compact menu"
