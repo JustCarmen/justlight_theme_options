@@ -60,7 +60,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 		// add newly activated modules to the menu
 		$sort = count($menulist) + 1;
 		foreach ($modules as $module_name => $module) {
-			if ($module->getMenu() && !array_key_exists($module_name, $menulist)) {
+			if (!array_key_exists($module_name, $menulist)) {
 				$menulist[$module_name] = array(
 					'title'		 => $module->getTitle(),
 					'label'		 => $module_name,
@@ -88,6 +88,28 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 			$html .= $menu['title'] . '</li>';
 		}
 		return $html;
+	}
+	
+	/** 
+	 * Check if $module->getMenu does not return null
+	 * Used on the configuration page
+	 * 
+	 * @global type $WT_TREE
+	 * @param type $label
+	 * @return boolean	 * 
+	 */
+	public function isMenu ($label) {
+		global $WT_TREE;
+		$module = Module::getModuleByName($label);
+		if (in_array($module, Module::getActiveMenus($WT_TREE))) {
+			if ($module->getMenu()) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return true;
+		}								
 	}
 
 	// Set default module options

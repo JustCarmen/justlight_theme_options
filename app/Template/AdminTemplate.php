@@ -229,7 +229,9 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<?php
 							$menulist = $this->options('menu');
 							foreach ($menulist as $label => $menu) {
-								$menu['sort'] == 0 ? $trashMenu[$label] = $menu : $activeMenu[$label] = $menu;
+								if ($this->isMenu($label)) {
+									$menu['sort'] == 0 ? $trashMenu[$label] = $menu : $activeMenu[$label] = $menu;
+								}
 							}
 							?>
 							<?php if (isset($activeMenu)): ?>
