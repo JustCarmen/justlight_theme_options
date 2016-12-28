@@ -59,11 +59,11 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 
 		// add newly activated modules to the menu
 		$sort = count($menulist) + 1;
-		foreach ($modules as $module_name => $module) {
-			if (!array_key_exists($module_name, $menulist)) {
-				$menulist[$module_name] = array(
+		foreach ($modules as $label => $module) {
+			if (!array_key_exists($label, $menulist)) {
+				$menulist[$label] = array(
 					'title'		 => $module->getTitle(),
-					'label'		 => $module_name,
+					'label'		 => $label,
 					'sort'		 => $sort++,
 					'function'	 => 'menuModule'
 				);
