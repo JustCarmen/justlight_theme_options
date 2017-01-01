@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2017-01-01 19:44+0100\n"
-"PO-Revision-Date: 2017-01-01 19:12+0000\n"
+"PO-Revision-Date: 2017-01-01 19:50+0000\n"
 "Last-Translator: Martin Pannier <der@bauschaffen.de>\n"
 "Language-Team: German <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/de/>\n"
 "Language: de\n"
@@ -24,11 +24,11 @@ msgstr "Wenn diese Einstellung aktiviert ist, wird das Medienmenü ins Hauptmen�
 
 #: app/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr "Wenn Sie diese Option aktivieren, werden im Hauptmenüpunkt \"Multimedia\" vorhandene Unterordner angezeigt."
+msgstr "Wenn Sie diese Einstellung aktivieren, werden im Hauptmenüpunkt \"Multimedia\" vorhandene Unterordner angezeigt."
 
 #: app/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
-msgstr "Im kompakten Menü \"Zeige\" werden die Menüs Diagramme, Listen, Kalender und (optional) Berichte zusammen gruppiert."
+msgstr "Im gemeinsamen Menü \"Zeige\" werden die Menüs Diagramme, Listen, Kalender und (optional) Berichte zusammen gruppiert."
 
 #: app/Template/AdminTemplate.php:181
 msgid "Include the reports menu in the compact “View” menu"
@@ -66,7 +66,7 @@ msgstr "Einträge im Hauptmenü sortieren"
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
-msgstr "Die Namen der Unterverzeichnisse auf der ersten Ebene im Medienordner auf dem Server werden als Untermenü im neuen Menü \"Multimedia\" genutzt.<br /><br /><strong>Achtung: Diese Untermenüpunkte werden nicht automatisch übersetzt. Nutzen Sie ein eigene Sprachdatei, um die Menüpunkte zu übersetzen. Mehr Informationen dazu finden Sie im WIKI von webtrees.</strong>"
+msgstr "Die Namen der Unterverzeichnisse auf der ersten Ebene im Medienordner auf dem Server werden als Untermenü im neuen Menü \"Multimedia\" verwendet.<br /><br /><strong>Achtung: Diese Untermenüpunkte werden nicht automatisch übersetzt. Verweden Sie ein eigene Sprachdatei, um die Menüpunkte zu übersetzen. Mehr Informationen dazu finden Sie im WIKI von webtrees.</strong>"
 
 #: app/Template/AdminTemplate.php:251
 msgid "The settings will be reset to default. Are you sure you want to do this?"
@@ -74,4 +74,4 @@ msgstr "Die Einstellungen werden auf die Standardwerte zurückgesetzt. Sind Sie 
 
 #: app/Template/AdminTemplate.php:171
 msgid "Use a compact menu"
-msgstr "Gemeinsames Menü für Diagramme, Listen und Kalendar verwenden?"
+msgstr "Gemeinsames Menü für Diagramme, Listen und Kalendar verwenden"
