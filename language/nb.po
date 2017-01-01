@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-12-26 16:41+0100\n"
+"POT-Creation-Date: 2017-01-01 19:44+0100\n"
 "PO-Revision-Date: 2016-09-05 03:21+0000\n"
 "Last-Translator: Thomas Rindal <thomas@rindal.net>\n"
 "Language-Team: Norwegian Bokmål <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/nb/>\n"
@@ -18,12 +18,12 @@ msgstr ""
 
 #: app/Template/AdminTemplate.php:226
 #, fuzzy
-msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
+msgid "Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button."
 msgstr "Klikk på en rad, dra og slipp for å endre rekkefølge på topp-meny-elementene. Klikk deretter \"lagre\"-knappen."
 
 #: app/Template/AdminTemplate.php:195
 #, fuzzy
-msgid "If this option is set the media menu will be moved to the topmenu."
+msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Hvis dette alternativet er valgt vil mediamenyen bli flyttet til toppmenyen."
 
 #: app/Template/AdminTemplate.php:209
@@ -38,7 +38,7 @@ msgstr "I den kompakte \"View\" -menyen vil menyene for diagrammer, lister, kale
 
 #: app/Template/AdminTemplate.php:181
 #, fuzzy
-msgid "Include the reports topmenu in the compact “View” topmenu"
+msgid "Include the reports menu in the compact “View” menu"
 msgstr "Inkluder rapporter i toppmenyen i den kompakte \"view\" toppmenyen?"
 
 #. I18N: Name of a module
@@ -47,7 +47,7 @@ msgid "JustLight Theme Options"
 msgstr ""
 
 #: app/Template/AdminTemplate.php:191
-msgid "Media menu in topmenu"
+msgid "Media menu in main menu"
 msgstr ""
 
 #: app/Template/AdminTemplate.php:145
@@ -68,14 +68,14 @@ msgid "Size of the family tree title"
 msgstr ""
 
 #: app/Template/AdminTemplate.php:220
-msgid "Sort Topmenu items"
+msgid "Sort menu items"
 msgstr ""
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr ""
 
-#: app/Template/AdminTemplate.php:249
+#: app/Template/AdminTemplate.php:251
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-12-26 16:41+0100\n"
+"POT-Creation-Date: 2017-01-01 19:44+0100\n"
 "PO-Revision-Date: 2016-05-05 11:36+0000\n"
 "Last-Translator: Łukasz Wileński <lukas.the.best@poczta.fm>\n"
 "Language-Team: Polish <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/pl/>\n"
@@ -17,11 +17,13 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: app/Template/AdminTemplate.php:226
-msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
+#, fuzzy
+msgid "Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button."
 msgstr "Kliknij wiersz, a następnie przeciągnij i upuść, aby zmienić kolejność elementów menu głównego. Następnie kliknij przycisk „Zapisz”."
 
 #: app/Template/AdminTemplate.php:195
-msgid "If this option is set the media menu will be moved to the topmenu."
+#, fuzzy
+msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Jeśli ta opcja jest ustawiona, menu multimediów zostanie przeniesione do głównego menu."
 
 #: app/Template/AdminTemplate.php:209
@@ -34,7 +36,7 @@ msgstr "W kompaktowym „Widoku” menu dla wykresów, list, kalendarza i (opcjo
 
 #: app/Template/AdminTemplate.php:181
 #, fuzzy
-msgid "Include the reports topmenu in the compact “View” topmenu"
+msgid "Include the reports menu in the compact “View” menu"
 msgstr "Dołącz raporty do kompaktowego „Widoku” w głównym menu"
 
 #. I18N: Name of a module
@@ -43,7 +45,8 @@ msgid "JustLight Theme Options"
 msgstr "Opcje motywu JustLight"
 
 #: app/Template/AdminTemplate.php:191
-msgid "Media menu in topmenu"
+#, fuzzy
+msgid "Media menu in main menu"
 msgstr "Menu multimediów w głównym menu"
 
 #: app/Template/AdminTemplate.php:145
@@ -64,14 +67,15 @@ msgid "Size of the family tree title"
 msgstr "Rozmiar tytułu drzewa genealogicznego"
 
 #: app/Template/AdminTemplate.php:220
-msgid "Sort Topmenu items"
+#, fuzzy
+msgid "Sort menu items"
 msgstr "Sortuj pozycje menu głównego"
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "Nazwy głównych podfolderów z folderu multimediów na serwerze zostaną wykorzystane jako elementy podmenu nowego menu multimedialnego. Uwaga: nazwy podmenu nie będą tłumaczone automatycznie. Należy użyć własnego pliku językowego aby tłumaczyć pozycje menu. Należy przeczytać wiki webrees aby uzyskać więcej informacji."
 
-#: app/Template/AdminTemplate.php:249
+#: app/Template/AdminTemplate.php:251
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "Ustawienia zostaną zresetowane do wartości domyślnych. Czy na pewno chcesz to zrobić?"
 

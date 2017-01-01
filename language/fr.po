@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2016-12-26 16:41+0100\n"
+"POT-Creation-Date: 2017-01-01 19:44+0100\n"
 "PO-Revision-Date: 2016-12-27 06:37+0000\n"
 "Last-Translator: Michel <gustine@laposte.net>\n"
 "Language-Team: French <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/fr/>\n"
@@ -15,11 +15,13 @@ msgstr ""
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
 #: app/Template/AdminTemplate.php:226
-msgid "Click a row, then drag-and-drop to re-order the topmenu items. Then click the “save” button."
+#, fuzzy
+msgid "Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button."
 msgstr "Cliquez sur une ligne, puis faites un glisser-déposer pour réorganiser les éléments du menu principal. Cliquez ensuite sur le bouton « enregistrer »."
 
 #: app/Template/AdminTemplate.php:195
-msgid "If this option is set the media menu will be moved to the topmenu."
+#, fuzzy
+msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Si cette option est activée, le menu « Média » est déplacé dans le menu principal."
 
 #: app/Template/AdminTemplate.php:209
@@ -31,7 +33,8 @@ msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and 
 msgstr "Dans le menu compact le menu « Afficher » regroupe les menus « Diagrammes », « Listes », « Calendrier » et (en option) « Rapports »."
 
 #: app/Template/AdminTemplate.php:181
-msgid "Include the reports topmenu in the compact “View” topmenu"
+#, fuzzy
+msgid "Include the reports menu in the compact “View” menu"
 msgstr "Inclure le menu « Rapports » dans le menu « Afficher » dans le menu compact"
 
 #. I18N: Name of a module
@@ -40,7 +43,8 @@ msgid "JustLight Theme Options"
 msgstr "Paramètres du thème JustLight"
 
 #: app/Template/AdminTemplate.php:191
-msgid "Media menu in topmenu"
+#, fuzzy
+msgid "Media menu in main menu"
 msgstr "Ajouter un menu « Média » dans le menu principal ?"
 
 #: app/Template/AdminTemplate.php:145
@@ -61,14 +65,15 @@ msgid "Size of the family tree title"
 msgstr "Taille du titre de l'arbre généalogique"
 
 #: app/Template/AdminTemplate.php:220
-msgid "Sort Topmenu items"
+#, fuzzy
+msgid "Sort menu items"
 msgstr "Trier les éléments dans le menu principal"
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "Si cette option est activée, un nouveau menu « Média » sera ajouté au menu principal. Le nom des dossiers de médias apparaitront comme sous-menu du nouveau menu « Média ». Attention : Ces sous-menus ne sont pas traduits automatiquement. Pour les traduire, il faut le faire manuellement. Voir les instructions dans le WIKI de webtrees."
 
-#: app/Template/AdminTemplate.php:249
+#: app/Template/AdminTemplate.php:251
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "Les paramètres seront réinitialisés aux valeurs par défaut. Êtes-vous sûr de vouloir faire ça ?"
 
