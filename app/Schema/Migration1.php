@@ -19,6 +19,7 @@ namespace JustCarmen\WebtreesAddOns\JustLight\Schema;
 use Fisharebest\Webtrees\Database;
 use Fisharebest\Webtrees\Log;
 use Fisharebest\Webtrees\Schema\MigrationInterface;
+
 /**
  * Upgrade the database schema from version 1 to version 2.
  */
@@ -33,4 +34,5 @@ class Migration1 implements MigrationInterface {
 			Log::addConfigurationLog('JustLight Theme Options reset to default values due to major changes in database scheme');
 		}
 	}
+
 }

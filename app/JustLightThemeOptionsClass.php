@@ -33,8 +33,8 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 		if ($key === 'mediafolders') {
 			return $this->listMediaFolders();
 		} else {
-			$JL_OPTIONS = unserialize($this->getSetting('JL_OPTIONS'));
-			$key = strtoupper($key);
+			$JL_OPTIONS	 = unserialize($this->getSetting('JL_OPTIONS'));
+			$key		 = strtoupper($key);
 			if (empty($JL_OPTIONS) || (is_array($JL_OPTIONS) && !array_key_exists($key, $JL_OPTIONS))) {
 				return $key === 'MENU' ? $this->getDefaultMenu() : $this->setDefault($key);
 			} else {
@@ -44,8 +44,8 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 	}
 
 	protected function saveOptions() {
-		$NEW_JL_OPTIONS = Filter::postArray('NEW_JL_OPTIONS');
-		$NEW_JL_OPTIONS['MENU'] = $this->sortArray(Filter::postArray('NEW_JL_MENU'), 'sort');
+		$NEW_JL_OPTIONS			 = Filter::postArray('NEW_JL_OPTIONS');
+		$NEW_JL_OPTIONS['MENU']	 = $this->sortArray(Filter::postArray('NEW_JL_MENU'), 'sort');
 
 		$this->setSetting('JL_OPTIONS', serialize($NEW_JL_OPTIONS));
 		Log::addConfigurationLog($this->getTitle() . ' config updated');
@@ -89,8 +89,8 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 		}
 		return $html;
 	}
-	
-	/** 
+
+	/**
 	 * Check if $module->getMenu does not return null
 	 * Used on the configuration page
 	 * 
@@ -98,7 +98,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 	 * @param type $label
 	 * @return boolean	 * 
 	 */
-	public function isMenu ($label) {
+	public function isMenu($label) {
 		global $WT_TREE;
 		$module = Module::getModuleByName($label);
 		if (in_array($module, Module::getActiveMenus($WT_TREE))) {
@@ -109,7 +109,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 			}
 		} else {
 			return true;
-		}								
+		}
 	}
 
 	// Set default module options
@@ -182,11 +182,11 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 	private function listMediaFolders() {
 		global $WT_TREE;
 
-		$MEDIA_DIRECTORY = $WT_TREE->getPreference('MEDIA_DIRECTORY');
-		$folders = QueryMedia::folderList();
-		array_shift($folders);		
-		$folderlist[$MEDIA_DIRECTORY] = strtoupper(I18N::translate(substr($MEDIA_DIRECTORY, 0, -1)));
-		
+		$MEDIA_DIRECTORY				 = $WT_TREE->getPreference('MEDIA_DIRECTORY');
+		$folders						 = QueryMedia::folderList();
+		array_shift($folders);
+		$folderlist[$MEDIA_DIRECTORY]	 = strtoupper(I18N::translate(substr($MEDIA_DIRECTORY, 0, -1)));
+
 		foreach ($folders as $key => $value) {
 			if (count(glob(WT_DATA_DIR . $MEDIA_DIRECTORY . $value . '*')) > 0) {
 				$folder = array_filter(explode("/", $value));
@@ -208,10 +208,10 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 
 		$return_array = array();
 		foreach ($tmp_array as $pos => $val) {
-			$return_array[$pos]['title'] = $array[$pos]['title'];
-			$return_array[$pos]['label'] = $array[$pos]['label'];
-			$return_array[$pos]['sort'] = $array[$pos]['sort'];
-			$return_array[$pos]['function'] = $array[$pos]['function'];
+			$return_array[$pos]['title']	 = $array[$pos]['title'];
+			$return_array[$pos]['label']	 = $array[$pos]['label'];
+			$return_array[$pos]['sort']		 = $array[$pos]['sort'];
+			$return_array[$pos]['function']	 = $array[$pos]['function'];
 		}
 		return $return_array;
 	}

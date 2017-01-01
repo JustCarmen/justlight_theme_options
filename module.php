@@ -27,14 +27,13 @@ use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use JustCarmen\WebtreesAddOns\JustLight\Template\AdminTemplate;
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
-	
-	const CUSTOM_VERSION = '1.7.8.1';
-	const CUSTOM_WEBSITE = 'http://www.justcarmen.nl/themes/justlight/';
-	
+
+	const CUSTOM_VERSION			 = '1.7.8.1';
+	const CUSTOM_WEBSITE			 = 'http://www.justcarmen.nl/themes/justlight/';
 	// How to update the database schema for this module
-	const SCHEMA_TARGET_VERSION = 2;
-	const SCHEMA_SETTING_NAME = 'JL_SCHEMA_VERSION';
-	const SCHEMA_MIGRATION_PREFIX = '\JustCarmen\WebtreesAddOns\JustLight\Schema';
+	const SCHEMA_TARGET_VERSION	 = 2;
+	const SCHEMA_SETTING_NAME		 = 'JL_SCHEMA_VERSION';
+	const SCHEMA_MIGRATION_PREFIX	 = '\JustCarmen\WebtreesAddOns\JustLight\Schema';
 
 	/** @var string location of the JustBlack Theme Options module files */
 	var $directory;
@@ -72,18 +71,18 @@ class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfig
 	// Extend ModuleConfigInterface
 	public function modAction($mod_action) {
 		Database::updateSchema(self::SCHEMA_MIGRATION_PREFIX, self::SCHEMA_SETTING_NAME, self::SCHEMA_TARGET_VERSION);
-		
+
 		switch ($mod_action) {
 			case 'admin_config':
 				if (Filter::postBool('save') && Filter::checkCsrf()) {
 					$this->module()->saveOptions();
 				}
-				$template = new AdminTemplate;
+				$template	 = new AdminTemplate;
 				return $template->pageContent();
 			case 'admin_reset':
 				Database::prepare("DELETE FROM `##module_setting` WHERE setting_name LIKE 'JL%'")->execute();
 				Log::addConfigurationLog($this->getTitle() . ' reset to default values');
-				$template = new AdminTemplate;
+				$template	 = new AdminTemplate;
 				return $template->pageContent();
 			default:
 				http_response_code(404);

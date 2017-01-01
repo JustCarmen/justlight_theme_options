@@ -27,8 +27,8 @@ class Migration0 implements MigrationInterface {
 	/** {@inheritDoc} */
 	public function upgrade() {
 		// add menu function for modulemenus
-		$module_options = 'JL_OPTIONS';
-		$jl_options = Database::prepare(
+		$module_options	 = 'JL_OPTIONS';
+		$jl_options		 = Database::prepare(
 				"SELECT setting_value FROM `##module_setting` WHERE setting_name=?"
 			)->execute(array($module_options))->fetchOne();
 
