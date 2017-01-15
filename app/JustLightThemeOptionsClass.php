@@ -47,10 +47,27 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 	protected function saveOptions() {
 		$NEW_JL_OPTIONS			 = Filter::postArray('NEW_JL_OPTIONS');
 		$NEW_JL_OPTIONS['MENU']	 = $this->sortArray(Filter::postArray('NEW_JL_MENU'), 'sort');
-
-		$this->setSetting('JL_OPTIONS', serialize($NEW_JL_OPTIONS));
-		FlashMessages::addMessage(I18N::translate('Your settings are successfully saved.'), 'success');
-		Log::addConfigurationLog($this->getTitle() . ' config updated');
+		$NEW_JL_OPTIONS['LOGO']  = Filter::post('JL_LOGO');
+		
+		$error			= false;		
+		$image			= $_FILES['NEW_JL_LOGO'];
+		$filename		= 'jl_' . $image['name'];
+		$serverFileName = WT_DATA_DIR . $filename;
+		
+		if (!empty($image['name'])) {
+			if ($this->upload($image, $serverFileName)) {
+				$NEW_JL_OPTIONS['LOGO'] = $filename;
+			} else {
+				FlashMessages::addMessage(I18N::translate('Error: The logo you have uploaded is not a valid image! Your settings are not saved.'), 'warning');
+				$error = true;
+			}
+		}
+		
+		if (!$error) {
+			$this->setSetting('JL_OPTIONS', serialize($NEW_JL_OPTIONS));
+			FlashMessages::addMessage(I18N::translate('Your settings are successfully saved.'), 'success');
+			Log::addConfigurationLog($this->getTitle() . ' config updated');
+		}
 	}
 
 	protected function menuJustLight($menulist) {
@@ -117,6 +134,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 	// Set default module options
 	private function setDefault($key) {
 		$JL_DEFAULT = array(
+			'LOGO'					 => '',
 			'TITLESIZE'				 => '32',
 			'COMPACT_MENU'			 => '0',
 			'COMPACT_MENU_REPORTS'	 => '1',
@@ -234,6 +252,27 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 			$status = '';
 		}
 		return $status;
+	}
+	
+	private function upload($image, $serverFileName) {
+		// Check if we are dealing with a valid image
+		if (!empty($image['name']) && preg_match('/^image\/(png|gif|jpeg)/', $image['type'])) {
+			if ($this->options('logo')) {
+				$this->deleteLogo(); // delete the old logo from the server.
+			}
+			
+			move_uploaded_file($image['tmp_name'], $serverFileName);
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	protected function deleteLogo() {
+		$filename = $this->options('logo');
+		if (file_exists(WT_DATA_DIR . $filename)) {
+			unlink(WT_DATA_DIR . $filename);
+		}
 	}
 
 }

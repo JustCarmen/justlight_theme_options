@@ -65,6 +65,26 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 					}
 				});
 			}
+			
+			jQuery("#logo").on("click", "#file-input-btn, #file-input-text", function(){
+				jQuery("input[id=file-input]").trigger("click");
+			});
+			
+			jQuery("input[id=file-input]").change(function() {
+				var filename = jQuery(this)[0].files[0].name;
+				jQuery("#file-input-text").val(filename);
+				jQuery("#file-delete").show;
+			});
+			
+			if(!jQuery.trim(jQuery("#file-input-text").val()).length) {
+				jQuery("#file-delete").hide();
+			}
+			
+			// prepare file for deletion. File will be removed from the server after the options are saved.
+			jQuery("#file-delete").click(function(){
+				jQuery("#file-input-text").prop("value", "");
+				jQuery("#file-delete").hide();
+			});
 
 			toggleFields("#compact-menu", "#reports");
 			toggleFields("#media-menu", "#subfolders");
@@ -147,6 +167,39 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 					</div>
 					<div class="panel-collapse collapse in" id="collapseOne">
 						<div class="panel-body">
+							<!-- LOGO -->
+							<div id="logo" class="form-group form-group-sm">
+								<label class="control-label col-sm-4">
+									<?php echo I18N::translate('Logo') ?>
+								</label>
+								<div class="col-sm-4">
+									<input
+										id="file-input"
+										name="NEW_JL_LOGO"
+										type="file"
+										class="sr-only"
+										>
+									<div class="input-group">
+										<input
+											id="file-input-text"
+											class="form-control"
+											name="JL_LOGO"
+											type="text"
+											value="<?php echo $this->options('logo') ?>"
+											onfocus="this.blur()"
+											>
+										<span id="file-input-btn" class="btn btn-default input-group-addon">
+											<?php echo I18N::translate('Browse') ?>
+										</span>
+										<span id="file-delete" class="btn input-group-addon">
+											<i class="fa fa-trash"></i>
+										</span>
+									</div>
+								</div>
+								<div class="col-sm-8 col-sm-offset-4">
+									<p class="small text-muted"><?php echo I18N::translate('Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo.', I18N::direction() === 'rtl' ? 'right' : 'left') ?></p>
+								</div>
+							</div>
 							<!-- TREE TITLE SIZE -->
 							<div id="title-size" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
@@ -163,6 +216,9 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 											>
 										<span class="input-group-addon">px</span>
 									</div>
+								</div>
+								<div class="col-sm-8 col-sm-offset-4">
+									<p class="small text-muted"><?php echo I18N::translate('If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title.') ?></p>
 								</div>
 							</div>
 							<!-- COMPACT MENU -->
