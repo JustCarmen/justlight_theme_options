@@ -17,6 +17,7 @@
 namespace JustCarmen\WebtreesAddOns\JustLight;
 
 use Fisharebest\Webtrees\Filter;
+use Fisharebest\Webtrees\FlashMessages;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Log;
 use Fisharebest\Webtrees\Module;
@@ -48,6 +49,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 		$NEW_JL_OPTIONS['MENU']	 = $this->sortArray(Filter::postArray('NEW_JL_MENU'), 'sort');
 
 		$this->setSetting('JL_OPTIONS', serialize($NEW_JL_OPTIONS));
+		FlashMessages::addMessage(I18N::translate('Your settings are successfully saved.'), 'success');
 		Log::addConfigurationLog($this->getTitle() . ' config updated');
 	}
 
