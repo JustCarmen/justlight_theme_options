@@ -28,7 +28,7 @@ use JustCarmen\WebtreesAddOns\JustLight\Template\AdminTemplate;
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
 
-	const CUSTOM_VERSION			 = '1.7.9';
+	const CUSTOM_VERSION			 = '1.8.0-dev';
 	const CUSTOM_WEBSITE			 = 'http://www.justcarmen.nl/themes/justlight/';
 	// How to update the database schema for this module
 	const SCHEMA_TARGET_VERSION	 = 2;
