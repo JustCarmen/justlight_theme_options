@@ -71,7 +71,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 	}
 
 	protected function menuJustLight($menulist) {
-		$modules = array();
+		$modules = [];
 		foreach (Tree::getAll() as $tree) {
 			$modules = array_merge(Module::getActiveMenus($tree), $modules);
 		}
@@ -80,12 +80,12 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 		$sort = count($menulist) + 1;
 		foreach ($modules as $label => $module) {
 			if (!array_key_exists($label, $menulist)) {
-				$menulist[$label] = array(
+				$menulist[$label] = [
 					'title'		 => $module->getTitle(),
 					'label'		 => $label,
 					'sort'		 => $sort++,
 					'function'	 => 'menuModule'
-				);
+				];
 			}
 		}
 		// delete deactivated modules from the menu
@@ -133,7 +133,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 
 	// Set default module options
 	private function setDefault($key) {
-		$JL_DEFAULT = array(
+		$JL_DEFAULT = [
 			'LOGO'					 => '',
 			'TITLESIZE'				 => '32',
 			'COMPACT_MENU'			 => '0',
@@ -141,61 +141,61 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 			'MEDIA_MENU'			 => '0',
 			'MEDIA_LINK'			 => '',
 			'SHOW_SUBFOLDERS'		 => '1'
-		);
+		];
 		return $JL_DEFAULT[$key];
 	}
 
 	private function getDefaultMenu() {
-		$menulist = array(
-			'compact'	 => array(
+		$menulist = [
+			'compact'	 => [
 				'title'		 => I18N::translate('View'),
 				'label'		 => 'compact',
 				'sort'		 => '0',
 				'function'	 => 'menuCompact'
-			),
-			'media'		 => array(
+			],
+			'media'		 => [
 				'title'		 => I18N::translate('Media'),
 				'label'		 => 'media',
 				'sort'		 => '0',
 				'function'	 => 'menuMedia'
-			),
-			'homepage'	 => array(
+			],
+			'homepage'	 => [
 				'title'		 => I18N::translate('Home page'),
 				'label'		 => 'homepage',
 				'sort'		 => '1',
 				'function'	 => 'menuHomePage'
-			),
-			'charts'	 => array(
+			],
+			'charts'	 => [
 				'title'		 => I18N::translate('Charts'),
 				'label'		 => 'charts',
 				'sort'		 => '3',
 				'function'	 => 'menuChart'
-			),
-			'lists'		 => array(
+			],
+			'lists'		 => [
 				'title'		 => I18N::translate('Lists'),
 				'label'		 => 'lists',
 				'sort'		 => '4',
 				'function'	 => 'menuLists'
-			),
-			'calendar'	 => array(
+			],
+			'calendar'	 => [
 				'title'		 => I18N::translate('Calendar'),
 				'label'		 => 'calendar',
 				'sort'		 => '5',
 				'function'	 => 'menuCalendar'
-			),
-			'reports'	 => array(
+			],
+			'reports'	 => [
 				'title'		 => I18N::translate('Reports'),
 				'label'		 => 'reports',
 				'sort'		 => '6',
 				'function'	 => 'menuReports'
-			),
-			'search'	 => array(
+			],
+			'search'	 => [
 				'title'		 => I18N::translate('Search'),
 				'label'		 => 'search',
 				'sort'		 => '7',
 				'function'	 => 'menuSearch'
-			),
-		);
+			],
+		];
 		return $this->menuJustLight($menulist);
 	}
 
@@ -226,7 +226,7 @@ class JustLightThemeOptionsClass extends JustLightThemeOptionsModule {
 		}
 		asort($tmp_array);
 
-		$return_array = array();
+		$return_array = [];
 		foreach ($tmp_array as $pos => $val) {
 			$return_array[$pos]['title']	 = $array[$pos]['title'];
 			$return_array[$pos]['label']	 = $array[$pos]['label'];
