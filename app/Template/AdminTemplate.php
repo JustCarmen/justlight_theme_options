@@ -150,19 +150,19 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 		?>
 		<!-- ADMIN PAGE CONTENT -->
 		<ol class="breadcrumb small">
-			<li><a href="admin.php"><?php echo I18N::translate('Control panel') ?></a></li>
-			<li><a href="admin_modules.php"><?php echo I18N::translate('Module administration') ?></a></li>
-			<li class="active"><?php echo $this->getTitle() ?></li>
+			<li><a href="admin.php"><?= I18N::translate('Control panel') ?></a></li>
+			<li><a href="admin_modules.php"><?= I18N::translate('Module administration') ?></a></li>
+			<li class="active"><?= $this->getTitle() ?></li>
 		</ol>
-		<h2><?php echo $this->getTitle() ?></h2>
-		<form action="<?php echo $this->getConfigLink() ?>" enctype="multipart/form-data" name="configform" method="post" class="form-horizontal">
+		<h2><?= $this->getTitle() ?></h2>
+		<form action="<?= $this->getConfigLink() ?>" enctype="multipart/form-data" name="configform" method="post" class="form-horizontal">
 			<input type="hidden" value="1" name="save">
-			<?php echo Filter::getCsrf() ?>
+			<?= Filter::getCsrf() ?>
 			<div id="accordion" class="panel-group">
 				<div id="panel1" class="panel panel-default">
 					<div class="panel-heading">
 						<h4 class="panel-title">
-							<a href="#collapseOne" data-target="#collapseOne" data-toggle="collapse"><?php echo I18N::translate('Options') ?></a>
+							<a href="#collapseOne" data-target="#collapseOne" data-toggle="collapse"><?= I18N::translate('Options') ?></a>
 						</h4>
 					</div>
 					<div class="panel-collapse collapse in" id="collapseOne">
@@ -170,7 +170,7 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							<!-- LOGO -->
 							<div id="logo" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Logo') ?>
+									<?= I18N::translate('Logo') ?>
 								</label>
 								<div class="col-sm-4">
 									<input
@@ -185,11 +185,11 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 											class="form-control"
 											name="JL_LOGO"
 											type="text"
-											value="<?php echo $this->options('logo') ?>"
+											value="<?= $this->options('logo') ?>"
 											onfocus="this.blur()"
 											>
 										<span id="file-input-btn" class="btn btn-default input-group-addon">
-											<?php echo I18N::translate('Browse') ?>
+											<?= I18N::translate('Browse') ?>
 										</span>
 										<span id="file-delete" class="btn input-group-addon">
 											<i class="fa fa-trash"></i>
@@ -197,19 +197,19 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 									</div>
 								</div>
 								<div class="col-sm-8 col-sm-offset-4">
-									<p class="small text-muted"><?php echo I18N::translate('Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo.', I18N::direction() === 'rtl' ? 'right' : 'left') ?></p>
+									<p class="small text-muted"><?= I18N::translate('Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo.', I18N::direction() === 'rtl' ? 'right' : 'left') ?></p>
 								</div>
 							</div>
 							<!-- TREE TITLE SIZE -->
 							<div id="title-size" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Size of the family tree title') ?>
+									<?= I18N::translate('Size of the family tree title') ?>
 								</label>
 								<div class="col-sm-2">
 									<div class="input-group">
 										<input
 											type="text"
-											value="<?php echo $this->options('titlesize') ?>"
+											value="<?= $this->options('titlesize') ?>"
 											size="2"
 											name="NEW_JL_OPTIONS[TITLESIZE]"
 											class="form-control"
@@ -218,39 +218,39 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 									</div>
 								</div>
 								<div class="col-sm-8 col-sm-offset-4">
-									<p class="small text-muted"><?php echo I18N::translate('If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title.') ?></p>
+									<p class="small text-muted"><?= I18N::translate('If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title.') ?></p>
 								</div>
 							</div>
 							<!-- COMPACT MENU -->
 							<div id="compact-menu" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Use a compact menu') ?>
+									<?= I18N::translate('Use a compact menu') ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU]', $this->options('compact_menu'), 'class="radio-inline"') ?>
-									<p class="small text-muted"><?php echo I18N::translate('In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together.') ?></p>
+									<?= FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU]', $this->options('compact_menu'), 'class="radio-inline"') ?>
+									<p class="small text-muted"><?= I18N::translate('In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together.') ?></p>
 								</div>
 							</div>
 							<!-- REPORTS -->
 							<div id="reports" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Include the reports menu in the compact “View” menu') ?>
+									<?= I18N::translate('Include the reports menu in the compact “View” menu') ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU_REPORTS]', $this->options('compact_menu_reports'), 'class="radio-inline"') ?>
+									<?= FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[COMPACT_MENU_REPORTS]', $this->options('compact_menu_reports'), 'class="radio-inline"') ?>
 								</div>
 							</div>
 							<!-- MEDIA MENU -->
 							<?php $folders = $this->options('mediafolders'); ?>
 							<div id="media-menu" class="form-group form-group-sm">
 								<label class="control-label col-sm-4">
-									<?php echo I18N::translate('Media menu in main menu') ?>
+									<?= I18N::translate('Media menu in main menu') ?>
 								</label>
 								<div class="col-sm-8">
-									<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu'), 'class="radio-inline"') ?>
-									<p class="small text-muted"><?php echo I18N::translate('If this option is set the media menu will be moved to the main menu.') ?></p>
+									<?= FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[MEDIA_MENU]', $this->options('media_menu'), 'class="radio-inline"') ?>
+									<p class="small text-muted"><?= I18N::translate('If this option is set the media menu will be moved to the main menu.') ?></p>
 									<?php if (count($folders) > 1): // add extra information about subfolders  ?>
-										<p class="small text-muted"><?php echo I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.') ?></p>
+										<p class="small text-muted"><?= I18N::translate('The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information.') ?></p>
 									<?php endif; ?>
 								</div>
 							</div>
@@ -258,11 +258,11 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 								<!-- SHOW SUBFOLDERS -->
 								<div id="subfolders" class="form-group form-group-sm">
 									<label class="control-label col-sm-4">
-										<?php echo I18N::translate('Include subfolders') ?>
+										<?= I18N::translate('Include subfolders') ?>
 									</label>
 									<div class="col-sm-8">
-										<?php echo FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[SHOW_SUBFOLDERS]', $this->options('show_subfolders'), 'class="radio-inline"') ?>
-										<p class="small text-muted"><?php echo I18N::translate('If you set this option the results on the media list page will include subfolders.') ?></p>
+										<?= FunctionsEdit::editFieldYesNo('NEW_JL_OPTIONS[SHOW_SUBFOLDERS]', $this->options('show_subfolders'), 'class="radio-inline"') ?>
+										<p class="small text-muted"><?= I18N::translate('If you set this option the results on the media list page will include subfolders.') ?></p>
 									</div>
 								</div>
 							<?php endif; ?>
@@ -273,13 +273,13 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 					<div class="panel-heading">
 						<h4 class="panel-title">
 							<a class="collapsed" href="#collapseTwo" data-target="#collapseTwo" data-toggle="collapse">
-								<?php echo I18N::translate('Sort menu items') ?>
+								<?= I18N::translate('Sort menu items') ?>
 							</a>
 						</h4>
 					</div>
 					<div class="panel-collapse collapse" id="collapseTwo">
 						<div class="panel-heading">
-							<?php echo I18N::translate('Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button.') ?>
+							<?= I18N::translate('Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button.') ?>
 						</div>
 						<div class="panel-body">
 							<?php
@@ -291,10 +291,10 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 							}
 							?>
 							<?php if (isset($activeMenu)): ?>
-								<ul id="sort-menu" class="list-group"><?php echo $this->listMenuJustLight($activeMenu) ?></ul>
+								<ul id="sort-menu" class="list-group"><?= $this->listMenuJustLight($activeMenu) ?></ul>
 							<?php endif; ?>
 							<?php if (isset($trashMenu)): // trashcan for toggling the compact menu. ?>
-								<ul id="trash-menu" class="sr-only"><?php echo $this->listMenuJustLight($trashMenu) ?></ul>
+								<ul id="trash-menu" class="sr-only"><?= $this->listMenuJustLight($trashMenu) ?></ul>
 							<?php endif; ?>
 						</div>
 					</div>
@@ -302,12 +302,12 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 			</div>
 			<button class="btn btn-primary" type="submit">
 				<i class="fa fa-check"></i>
-				<?php echo I18N::translate('save') ?>
+				<?= I18N::translate('save') ?>
 			</button>
-			<button class="btn btn-primary" type="reset" onclick="if (confirm('<?php echo I18N::translate('The settings will be reset to default. Are you sure you want to do this?') ?>'))
-						window.location.href = 'module.php?mod=<?php echo $this->getName() ?>&amp;mod_action=admin_reset';">
+			<button class="btn btn-primary" type="reset" onclick="if (confirm('<?= I18N::translate('The settings will be reset to default. Are you sure you want to do this?') ?>'))
+						window.location.href = 'module.php?mod=<?= $this->getName() ?>&amp;mod_action=admin_reset';">
 				<i class="fa fa-recycle"></i>
-				<?php echo I18N::translate('reset') ?>
+				<?= I18N::translate('reset') ?>
 			</button>
 		</form>
 		<?php
