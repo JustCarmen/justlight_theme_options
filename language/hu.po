@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2017-01-01 19:44+0100\n"
-"PO-Revision-Date: 2016-12-28 16:38+0000\n"
+"PO-Revision-Date: 2017-07-17 11:01+0000\n"
 "Last-Translator: Gyönyör János <gyj@centrum.sk>\n"
 "Language-Team: Hungarian <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/hu/>\n"
 "Language: hu\n"
@@ -10,21 +10,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.8\n"
+"X-Generator: Weblate 2.10\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: app/Template/AdminTemplate.php:226
-#, fuzzy
 msgid "Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button."
-msgstr "Klikk a sorra, majd egérrel fogd-és-vidd a kívánt sorrendbe. Végül klikk a “mentés” gombra."
+msgstr "Sorrakattintással tartsa-és-húzza a sort a kívánt sorrendbe. Végül kattintson a “mentés” gombra."
 
 #: app/Template/AdminTemplate.php:195
-#, fuzzy
 msgid "If this option is set the media menu will be moved to the main menu."
-msgstr "E lehetőség kiválasztásával a média menü a főmenübe kerül."
+msgstr "E lehetőség kiválasztásával a média menü áthelyeződik a főmenübe."
 
 #: app/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
@@ -35,9 +33,8 @@ msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and 
 msgstr "A tömörített “Megtekintés” menübe lesznek az Ábra, Lista, Naptár és (választhatóan) a Jelentés menük összevonva."
 
 #: app/Template/AdminTemplate.php:181
-#, fuzzy
 msgid "Include the reports menu in the compact “View” menu"
-msgstr "A Jelentések menü része a tömörített “Megtekintés” főmenünek"
+msgstr "A Jelentések menü legyen része a tömörített “Megtekintés” főmenünek"
 
 #. I18N: Name of a module
 #: module.php:64
@@ -45,9 +42,8 @@ msgid "JustLight Theme Options"
 msgstr "JustLight Téma beállításai"
 
 #: app/Template/AdminTemplate.php:191
-#, fuzzy
 msgid "Media menu in main menu"
-msgstr "Média menü a főmenüben"
+msgstr "A Média menü legyen a főmenüben"
 
 #: app/Template/AdminTemplate.php:145
 msgid "Options"
@@ -67,9 +63,8 @@ msgid "Size of the family tree title"
 msgstr "A családfa nevének nagysága"
 
 #: app/Template/AdminTemplate.php:220
-#, fuzzy
 msgid "Sort menu items"
-msgstr "A Főmenü elrendezése"
+msgstr "A menü rendezése"
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
