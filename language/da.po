@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2017-01-01 19:44+0100\n"
-"PO-Revision-Date: 2017-02-22 03:57+0000\n"
-"Last-Translator: Jamie Jaconelli <jamie@jaconelli.dk>\n"
+"PO-Revision-Date: 2017-07-21 14:19+0000\n"
+"Last-Translator: Finn Christensen <fc@winmagic.dk>\n"
 "Language-Team: Danish <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -17,27 +17,24 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: app/Template/AdminTemplate.php:226
-#, fuzzy
 msgid "Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button."
-msgstr "Klik på en række, og brug derefter \"Træk-og-slip\" for at sortere menupunkterne. Klik derefter på knappen \"gem\"."
+msgstr "Klik på en række og sorter menupunkter med \"Træk-og-slip\". Klik derefter på knappen \"Gem\"."
 
 #: app/Template/AdminTemplate.php:195
-#, fuzzy
 msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Hvis denne indstilling er valgt vil medie menuen blive flyttet til topmenuen."
 
 #: app/Template/AdminTemplate.php:209
 msgid "If you set this option the results on the media list page will include subfolders."
-msgstr "Hvis du vælger denne indstillinger vil resultaterne på siden med medier inkludere undermapper."
+msgstr "Hvis du vælger denne indstillinger vil listen af medier inkluderer undermapper."
 
 #: app/Template/AdminTemplate.php:175
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
-msgstr "Diagrammer, lister, kalender og (valgfrie) rapporter vil blive lagt sammen i den kompakte \"Vis\" menu."
+msgstr "Diagrammer, lister, kalender og (valgfrie) rapporter samles i den kompakte \"Vis\" menu."
 
 #: app/Template/AdminTemplate.php:181
-#, fuzzy
 msgid "Include the reports menu in the compact “View” menu"
-msgstr "Inkludér rapportmenuen i den kompakte \"Vis\" menu?"
+msgstr "Inkludér rapportmenuen i den kompakte \"Vis\" menu"
 
 #. I18N: Name of a module
 #: module.php:64
@@ -45,9 +42,8 @@ msgid "JustLight Theme Options"
 msgstr "JustLight Tema Opsætning"
 
 #: app/Template/AdminTemplate.php:191
-#, fuzzy
 msgid "Media menu in main menu"
-msgstr "Medie menu i topmenuen"
+msgstr "Medie menu i hovedmenuen"
 
 #: app/Template/AdminTemplate.php:145
 msgid "Options"
@@ -60,26 +56,24 @@ msgstr "Indstillinger for JustLight tema"
 #. I18N: Description of the module
 #: module.php:69
 msgid "Set options for the JustLight theme within the admin interface"
-msgstr "Sæt indstillingerne for JustLight tema med en admin bruger"
+msgstr "Sæt indstillingerne for JustLight tema som en admin bruger"
 
 #: app/Template/AdminTemplate.php:153
 msgid "Size of the family tree title"
 msgstr "Størrelse på familietræets titel"
 
 #: app/Template/AdminTemplate.php:220
-#, fuzzy
 msgid "Sort menu items"
-msgstr "Sortér Topmenuerne"
+msgstr "Sortér hovedmenuerne"
 
 #: app/Template/AdminTemplate.php:197
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
-msgstr "Navnene på første niveau af mediemapperne fra mediemappe på din server, vil blive brugt som undermenupunkter som nye medie menuer. Advarsel: Disse undermenupunkter bliver ikke oversat automatisk. Brug derfor en brugerdefineret sprogfil til at oversætte disse menupunkter. Læs webtrees WIKI for mere information."
+msgstr "Undermenupunkter som nye medie menuer tages fra navnene på det første niveau af mediemapperne fra mediemappe på din server. Advarsel: Disse undermenupunkter oversættes ikke automatisk. Anvend derfor en brugerdefineret sprogfil til at oversætte nævnte menupunkter. Læs webtrees WIKI for mere info."
 
 #: app/Template/AdminTemplate.php:251
 msgid "The settings will be reset to default. Are you sure you want to do this?"
-msgstr "Indstillingerne vil blive fabriksnulstillet. Er du sikker på du vil gøre dette?"
+msgstr "Indstillingerne resettes til default. Er du sikker på du vil gøre dette?"
 
 #: app/Template/AdminTemplate.php:171
-#, fuzzy
 msgid "Use a compact menu"
-msgstr "Brug af en kompakt menu?"
+msgstr "Brug en kompakt menu"
