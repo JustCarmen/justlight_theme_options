@@ -1,8 +1,7 @@
 <?php
 /**
  * webtrees: online genealogy
- * Copyright (C) 2017 webtrees development team
- * Copyright (C) 2017 JustCarmen
+* Copyright (C) 2018 JustCarmen (http://justcarmen.nl)
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -19,7 +18,6 @@ namespace JustCarmen\WebtreesAddOns\JustLight;
 use Composer\Autoload\ClassLoader;
 use Fisharebest\Webtrees\Database;
 use Fisharebest\Webtrees\Filter;
-use Fisharebest\Webtrees\FlashMessages;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Log;
 use Fisharebest\Webtrees\Module\AbstractModule;
@@ -28,7 +26,7 @@ use JustCarmen\WebtreesAddOns\JustLight\Template\AdminTemplate;
 
 class JustLightThemeOptionsModule extends AbstractModule implements ModuleConfigInterface {
 
-	const CUSTOM_VERSION			 = '1.8.0-dev';
+	const CUSTOM_VERSION			 = '1.7.11';
 	const CUSTOM_WEBSITE			 = 'http://www.justcarmen.nl/themes/justlight/';
 	// How to update the database schema for this module
 	const SCHEMA_TARGET_VERSION	 = 2;
