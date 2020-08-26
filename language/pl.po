@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2017-01-01 19:44+0100\n"
+"POT-Creation-Date: 2020-08-26 09:29+0200\n"
 "PO-Revision-Date: 2017-02-12 13:41+0000\n"
 "Last-Translator: Łukasz Wileński <lukas.the.best@poczta.fm>\n"
 "Language-Team: Polish <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/pl/>\n"
@@ -16,64 +16,80 @@ msgstr ""
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: app/Template/AdminTemplate.php:226
+#: app/Template/AdminTemplate.php:191
+msgid "Browse"
+msgstr ""
+
+#: app/Template/AdminTemplate.php:281
 msgid "Click a row, then drag-and-drop to re-order the menu items. Then click the “save” button."
 msgstr "Kliknij wiersz, a następnie przeciągnij i upuść, aby zmienić kolejność elementów menu. Następnie kliknij przycisk „Zapisz”."
 
-#: app/Template/AdminTemplate.php:195
+#: app/JustLightThemeOptionsClass.php:60
+msgid "Error: The logo you have uploaded is not a valid image! Your settings are not saved."
+msgstr ""
+
+#: app/Template/AdminTemplate.php:199
+#, php-format
+msgid "Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo."
+msgstr ""
+
+#: app/Template/AdminTemplate.php:250
 msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Jeśli ta opcja jest ustawiona, menu multimediów zostanie przeniesione do głównego menu."
 
-#: app/Template/AdminTemplate.php:209
+#: app/Template/AdminTemplate.php:264
 msgid "If you set this option the results on the media list page will include subfolders."
 msgstr "Jeśli opcja ta zostanie ustawiona, wyniki na stronie listy multimediów będą zawierać podfoldery."
 
-#: app/Template/AdminTemplate.php:175
+#: app/Template/AdminTemplate.php:220
+msgid "If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title."
+msgstr ""
+
+#: app/Template/AdminTemplate.php:230
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 msgstr "W kompaktowym „Widoku” menu dla wykresów, list, kalendarza i (opcjonalnie) dla raportów zostaną połączone ze sobą."
 
-#: app/Template/AdminTemplate.php:181
+#: app/Template/AdminTemplate.php:236
 msgid "Include the reports menu in the compact “View” menu"
 msgstr "Dołącz raporty do kompaktowego „Widoku” w menu"
 
 #. I18N: Name of a module
-#: module.php:64
+#: module.php:61
 msgid "JustLight Theme Options"
 msgstr "Opcje motywu JustLight"
 
-#: app/Template/AdminTemplate.php:191
+#: app/Template/AdminTemplate.php:246
 msgid "Media menu in main menu"
 msgstr "Menu multimediów w głównym menu"
 
-#: app/Template/AdminTemplate.php:145
-msgid "Options"
-msgstr "Opcje"
-
-#: app/Template/AdminTemplate.php:38
+#: app/Template/AdminTemplate.php:37
 msgid "Options for the JustLight theme"
 msgstr "Opcje dla motywu JustLight"
 
 #. I18N: Description of the module
-#: module.php:69
+#: module.php:66
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Ustawianie opcji dla motywu JustLight w panelu sterowania"
 
-#: app/Template/AdminTemplate.php:153
+#: app/Template/AdminTemplate.php:205
 msgid "Size of the family tree title"
 msgstr "Rozmiar tytułu drzewa genealogicznego"
 
-#: app/Template/AdminTemplate.php:220
+#: app/Template/AdminTemplate.php:275
 msgid "Sort menu items"
 msgstr "Sortuj pozycje menu"
 
-#: app/Template/AdminTemplate.php:197
+#: app/Template/AdminTemplate.php:252
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "Nazwy głównych podfolderów z folderu multimediów na serwerze zostaną wykorzystane jako elementy podmenu nowego menu multimedialnego. Uwaga: nazwy podmenu nie będą tłumaczone automatycznie. Należy użyć własnego pliku językowego aby tłumaczyć pozycje menu. Należy przeczytać wiki webrees aby uzyskać więcej informacji."
 
-#: app/Template/AdminTemplate.php:251
+#: app/Template/AdminTemplate.php:306
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "Ustawienia zostaną zresetowane do wartości domyślnych. Czy na pewno chcesz to zrobić?"
 
-#: app/Template/AdminTemplate.php:171
+#: app/Template/AdminTemplate.php:226
 msgid "Use a compact menu"
 msgstr "Użyj menu kompaktowego"
+
+#~ msgid "Options"
+#~ msgstr "Opcje"
