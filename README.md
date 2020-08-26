@@ -1,11 +1,15 @@
 JustLight Theme Options Module
 ==============================
 
-Theme options module for the JustLight theme in webtrees.
+[![Latest Release](https://img.shields.io/github/release/JustCarmen/justlight_theme_options.svg)][1]
+[![webtrees major version](https://img.shields.io/badge/webtrees-v1.x-red)][2]
+[![Downloads](https://img.shields.io/github/downloads/JustCarmen/justlight_theme_options/total.svg)]()
 
-This module requires [webtrees 1.7.x](https://github.com/fisharebest/webtrees). Download the latest stable release of this module [here](https://github.com/JustCarmen/justlight_theme_options/releases).
+Theme options module for the JustLight theme 1.7.x in webtrees.
 
-This module can only be used in conjunction with the [JustLight Theme](https://github.com/JustCarmen/justlight).
+PLEASE NOTE: THE JUSTLIGHT THEME FOR WEBTREES 2 DOES NOT USE THIS THEME OPTIONS MODULE. THIS MODULE ONLY WORKS WITH THE JUSTLIGHT THEME FOR WEBTREES 1.7.x. 
+
+SUPPORT FOR THIS MODULE MIGHT BE DROPPED IN THE FUTURE.
 
 Description
 -----------
@@ -16,7 +20,7 @@ On the JustLight Theme Options configuration page you can set the following opti
 
 Translations
 ------------
-You can help to translate this module. Updates to translations should be made at https://translate.webtrees.net/projects/justcarmen/. Changes made there will be pushed to the git repository periodically and will be available on the development version of the module. They will be included in the next release of this module.
+You can help to translate this module. Webtrees has dropped support for the module translation server, but you can manually update the translation files and send me the updated files or do a pull request.
 
 Installation & upgrading
 ------------------------
@@ -24,4 +28,8 @@ For more information about these subjects go to the JustCarmen help pages: http:
 
 Bugs and feature requests
 -------------------------
-If you experience any bugs or have a feature request for this theme you can [create a new issue](https://github.com/JustCarmen/justlight_theme_options/issues?state=open) or [use the webtrees subforum 'customising'](http://www.webtrees.net/index.php/en/forum/4-customising) to contact me.
+If you experience any bugs you can [create a new issue][3]. Feature requests are no longer be accepted.
+
+[1]: https://github.com/JustCarmen/justlight_theme_options/releases/latest
+[2]: https://webtrees.net/download
+[3]: https://github.com/JustCarmen/justlight_theme_options/issues?state=open
