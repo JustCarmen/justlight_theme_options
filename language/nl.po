@@ -91,11 +91,11 @@ msgstr "Gebruik een compact menu"
 
 #: app/Template/AdminTemplate.php:200
 msgid "left"
-msgstr ""
+msgstr "linker"
 
 #: app/Template/AdminTemplate.php:200
 msgid "right"
-msgstr ""
+msgstr "rechter"
 
 #~ msgid "Options"
 #~ msgstr "Opties"
