@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2020-08-26 09:29+0200\n"
+"POT-Creation-Date: 2020-12-22 21:38+0100\n"
 "PO-Revision-Date: 2016-09-26 10:33+0000\n"
 "Last-Translator: Francesco Fragasso <francescofragasso@alice.it>\n"
 "Language-Team: Italian <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/it/>\n"
@@ -29,7 +29,7 @@ msgstr "Fare clic su una riga, poi drag-and-drop per riordinare gli elementi top
 msgid "Error: The logo you have uploaded is not a valid image! Your settings are not saved."
 msgstr ""
 
-#: app/Template/AdminTemplate.php:199
+#: app/Template/AdminTemplate.php:200
 #, php-format
 msgid "Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo."
 msgstr ""
@@ -39,15 +39,15 @@ msgstr ""
 msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Se questa opzione è impostata il menu media verrà spostato nel topmenu."
 
-#: app/Template/AdminTemplate.php:264
+#: app/Template/AdminTemplate.php:266
 msgid "If you set this option the results on the media list page will include subfolders."
 msgstr "Se si imposta questa opzione i risultati nella pagina elenco multimediale includeranno le sottocartelle."
 
-#: app/Template/AdminTemplate.php:220
+#: app/Template/AdminTemplate.php:222
 msgid "If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title."
 msgstr ""
 
-#: app/Template/AdminTemplate.php:230
+#: app/Template/AdminTemplate.php:232
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 msgstr "Nel menù compatto \"View\", i menu per Grafici, Elenchi, Calendario e (facoltativamente) Report verranno uniti insieme."
 
@@ -75,27 +75,35 @@ msgstr "Opzioni per il Tema JustLight"
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Impostare le opzioni per il Tema JustLight all'interno dell'interfaccia di amministrazione"
 
-#: app/Template/AdminTemplate.php:205
+#: app/Template/AdminTemplate.php:207
 msgid "Size of the family tree title"
 msgstr "Dimensioni del titolo dell'albero genealogico"
 
-#: app/Template/AdminTemplate.php:275
+#: app/Template/AdminTemplate.php:277
 #, fuzzy
 msgid "Sort menu items"
 msgstr "Ordina voci Topmenu"
 
-#: app/Template/AdminTemplate.php:252
+#: app/Template/AdminTemplate.php:254
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "I nomi di primo livello della cartella media sul server verranno usati come elementi  sottomenu di un menu media. Avviso: queste voci di sottomenu non vengono tradotte automaticamente. Utilizzare un file di lingua personalizzato per tradurre le voci di menu. Leggi il WIKI webrees per ulteriori informazioni."
 
-#: app/Template/AdminTemplate.php:306
+#: app/Template/AdminTemplate.php:308
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "Verranno reimpostate le impostazioni predefinite. Sei sicuro di volerlo fare?"
 
-#: app/Template/AdminTemplate.php:226
+#: app/Template/AdminTemplate.php:228
 #, fuzzy
 msgid "Use a compact menu"
 msgstr "Utilizzare un menu compatto?"
+
+#: app/Template/AdminTemplate.php:200
+msgid "left"
+msgstr ""
+
+#: app/Template/AdminTemplate.php:200
+msgid "right"
+msgstr ""
 
 #~ msgid "Options"
 #~ msgstr "Opzioni"

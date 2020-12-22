@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2020-08-26 09:29+0200\n"
+"POT-Creation-Date: 2020-12-22 21:38+0100\n"
 "PO-Revision-Date: 2020-08-26 09:37+0200\n"
 "Last-Translator: Carmen Pijpers-Knegt <carmen@justcarmen.nl>\n"
 "Language-Team: English (United States) <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/en-US/>\n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,7 +26,7 @@ msgstr "Click a row, then drag-and-drop to re-order the menu items. Then click t
 msgid "Error: The logo you have uploaded is not a valid image! Your settings are not saved."
 msgstr "Error: The logo you have uploaded is not a valid image! Your settings are not saved."
 
-#: app/Template/AdminTemplate.php:199
+#: app/Template/AdminTemplate.php:200
 #, php-format
 msgid "Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo."
 msgstr "Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo."
@@ -35,15 +35,15 @@ msgstr "Here you can upload a logo. The logo is displayed above the tree title i
 msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "If this option is set the media menu will be moved to the main menu."
 
-#: app/Template/AdminTemplate.php:264
+#: app/Template/AdminTemplate.php:266
 msgid "If you set this option the results on the media list page will include subfolders."
 msgstr "If you set this option the results on the media list page will include subfolders."
 
-#: app/Template/AdminTemplate.php:220
+#: app/Template/AdminTemplate.php:222
 msgid "If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title."
 msgstr "If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title."
 
-#: app/Template/AdminTemplate.php:230
+#: app/Template/AdminTemplate.php:232
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 msgstr "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 
@@ -69,25 +69,33 @@ msgstr "Options for the JustLight theme"
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Set options for the JustLight theme within the admin interface"
 
-#: app/Template/AdminTemplate.php:205
+#: app/Template/AdminTemplate.php:207
 msgid "Size of the family tree title"
 msgstr "Size of the family tree title"
 
-#: app/Template/AdminTemplate.php:275
+#: app/Template/AdminTemplate.php:277
 msgid "Sort menu items"
 msgstr "Sort menu items"
 
-#: app/Template/AdminTemplate.php:252
+#: app/Template/AdminTemplate.php:254
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 
-#: app/Template/AdminTemplate.php:306
+#: app/Template/AdminTemplate.php:308
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "The settings will be reset to default. Are you sure you want to do this?"
 
-#: app/Template/AdminTemplate.php:226
+#: app/Template/AdminTemplate.php:228
 msgid "Use a compact menu"
 msgstr "Use a compact menu"
+
+#: app/Template/AdminTemplate.php:200
+msgid "left"
+msgstr ""
+
+#: app/Template/AdminTemplate.php:200
+msgid "right"
+msgstr ""
 
 #~ msgid "Options"
 #~ msgstr "Options"

@@ -64,21 +64,21 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 					}
 				});
 			}
-			
+
 			jQuery("#logo").on("click", "#file-input-btn, #file-input-text", function(){
 				jQuery("input[id=file-input]").trigger("click");
 			});
-			
+
 			jQuery("input[id=file-input]").change(function() {
 				var filename = jQuery(this)[0].files[0].name;
 				jQuery("#file-input-text").val(filename);
 				jQuery("#file-delete").show;
 			});
-			
+
 			if(!jQuery.trim(jQuery("#file-input-text").val()).length) {
 				jQuery("#file-delete").hide();
 			}
-			
+
 			// prepare file for deletion. File will be removed from the server after the options are saved.
 			jQuery("#file-delete").click(function(){
 				jQuery("#file-input-text").prop("value", "");
@@ -196,7 +196,9 @@ class AdminTemplate extends JustLightThemeOptionsClass {
 									</div>
 								</div>
 								<div class="col-sm-8 col-sm-offset-4">
-									<p class="small text-muted"><?= I18N::translate('Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo.', I18N::direction() === 'rtl' ? 'right' : 'left') ?></p>
+									<p class="small text-muted">
+										<?= I18N::translate('Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo.', I18N::direction() === 'rtl' ? I18N::translate('right') : I18N::translate('left')) ?>
+									</p>
 								</div>
 							</div>
 							<!-- TREE TITLE SIZE -->

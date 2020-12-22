@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2020-08-26 09:29+0200\n"
+"POT-Creation-Date: 2020-12-22 21:38+0100\n"
 "PO-Revision-Date: 2020-08-26 09:50+0200\n"
 "Last-Translator: Carmen Pijpers-Knegt <carmen@justcarmen.nl>\n"
 "Language-Team: Dutch <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/nl/>\n"
@@ -26,7 +26,7 @@ msgstr "Klik op een rij, sleep en laat los om de volgorde van de menu items te w
 msgid "Error: The logo you have uploaded is not a valid image! Your settings are not saved."
 msgstr "Fout: Het logo dat u heeft geüpload is geen geldige afbeelding! Uw instellingen zijn niet opgeslagen."
 
-#: app/Template/AdminTemplate.php:199
+#: app/Template/AdminTemplate.php:200
 #, php-format
 msgid "Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo."
 msgstr "Hier kunt u een logo uploaden. Het logo wordt getoond boven de titel van de stamboom in de %s-bovenhoek van de pagina. Laat leeg als u geen logo gebruikt."
@@ -35,15 +35,15 @@ msgstr "Hier kunt u een logo uploaden. Het logo wordt getoond boven de titel van
 msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Als deze optie is ingeschakeld, wordt het media menu verplaatst naar het hoofdmenu."
 
-#: app/Template/AdminTemplate.php:264
+#: app/Template/AdminTemplate.php:266
 msgid "If you set this option the results on the media list page will include subfolders."
 msgstr "Wanneer u deze optie instelt worden de resultaten op de media pagina getoond inclusief submappen."
 
-#: app/Template/AdminTemplate.php:220
+#: app/Template/AdminTemplate.php:222
 msgid "If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title."
 msgstr "Als u een logo gebruikt of lange stamboomtitels gebruikt, wilt u misschien de grootte van de tekst aanpassen. Zet de waarde op 0 als u geen stamboomtitel wilt tonen."
 
-#: app/Template/AdminTemplate.php:230
+#: app/Template/AdminTemplate.php:232
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 msgstr "In het compacte “Bekijk”-menu worden de menu's voor Diagrammen, Lijsten, Kalender en (optioneel) Rapporten, samengevoegd."
 
@@ -69,25 +69,33 @@ msgstr "Opties voor het JustLight thema"
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Zet opties voor het JustLight thema vanuit de administratie interface"
 
-#: app/Template/AdminTemplate.php:205
+#: app/Template/AdminTemplate.php:207
 msgid "Size of the family tree title"
 msgstr "Grootte van de stamboom titel"
 
-#: app/Template/AdminTemplate.php:275
+#: app/Template/AdminTemplate.php:277
 msgid "Sort menu items"
 msgstr "Menu items sorteren"
 
-#: app/Template/AdminTemplate.php:252
+#: app/Template/AdminTemplate.php:254
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "De namen van de mappen direct onder de hoofdmap verschijnen als submenu in het nieuwe media menu. Waarschuwing: deze submenu items worden niet automatisch vertaald. Gebruik een aangepast taalbestand om uw menu items te vertalen. Lees de webtrees WIKI voor meer informatie."
 
-#: app/Template/AdminTemplate.php:306
+#: app/Template/AdminTemplate.php:308
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "De standaardinstellingen worden teruggezet. Weet u zeker dat u dit wilt?"
 
-#: app/Template/AdminTemplate.php:226
+#: app/Template/AdminTemplate.php:228
 msgid "Use a compact menu"
 msgstr "Gebruik een compact menu"
+
+#: app/Template/AdminTemplate.php:200
+msgid "left"
+msgstr ""
+
+#: app/Template/AdminTemplate.php:200
+msgid "right"
+msgstr ""
 
 #~ msgid "Options"
 #~ msgstr "Opties"

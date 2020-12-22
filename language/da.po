@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
-"POT-Creation-Date: 2020-08-26 09:29+0200\n"
+"POT-Creation-Date: 2020-12-22 21:38+0100\n"
 "PO-Revision-Date: 2017-07-21 14:19+0000\n"
 "Last-Translator: Finn Christensen <fc@winmagic.dk>\n"
 "Language-Team: Danish <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/da/>\n"
@@ -28,7 +28,7 @@ msgstr "Klik på en række og sorter menupunkter med \"Træk-og-slip\". Klik der
 msgid "Error: The logo you have uploaded is not a valid image! Your settings are not saved."
 msgstr ""
 
-#: app/Template/AdminTemplate.php:199
+#: app/Template/AdminTemplate.php:200
 #, php-format
 msgid "Here you can upload a logo. The logo is displayed above the tree title in the top %s corner of the page. Leave blank if you are not using a logo."
 msgstr ""
@@ -37,15 +37,15 @@ msgstr ""
 msgid "If this option is set the media menu will be moved to the main menu."
 msgstr "Hvis denne indstilling er valgt vil medie menuen blive flyttet til topmenuen."
 
-#: app/Template/AdminTemplate.php:264
+#: app/Template/AdminTemplate.php:266
 msgid "If you set this option the results on the media list page will include subfolders."
 msgstr "Hvis du vælger denne indstillinger vil listen af medier inkluderer undermapper."
 
-#: app/Template/AdminTemplate.php:220
+#: app/Template/AdminTemplate.php:222
 msgid "If you use a logo or have long tree titles you may want to adjust the title size. Set the value to 0 if you don’t want to show the tree title."
 msgstr ""
 
-#: app/Template/AdminTemplate.php:230
+#: app/Template/AdminTemplate.php:232
 msgid "In the compact “View”-menu the menus for Charts, Lists, Calendar and (optionally) Reports will be merged together."
 msgstr "Diagrammer, lister, kalender og (valgfrie) rapporter samles i den kompakte \"Vis\" menu."
 
@@ -71,25 +71,33 @@ msgstr "Indstillinger for JustLight tema"
 msgid "Set options for the JustLight theme within the admin interface"
 msgstr "Sæt indstillingerne for JustLight tema som en admin bruger"
 
-#: app/Template/AdminTemplate.php:205
+#: app/Template/AdminTemplate.php:207
 msgid "Size of the family tree title"
 msgstr "Størrelse på familietræets titel"
 
-#: app/Template/AdminTemplate.php:275
+#: app/Template/AdminTemplate.php:277
 msgid "Sort menu items"
 msgstr "Sortér hovedmenuerne"
 
-#: app/Template/AdminTemplate.php:252
+#: app/Template/AdminTemplate.php:254
 msgid "The names of first level media folders from your media folder on the server will be used as submenu items of the new media menu. Warning: these submenu items are not translated automatically. Use a custom language file to translate your menu items. Read the webrees WIKI for more information."
 msgstr "Undermenupunkter som nye medie menuer tages fra navnene på det første niveau af mediemapperne fra mediemappe på din server. Advarsel: Disse undermenupunkter oversættes ikke automatisk. Anvend derfor en brugerdefineret sprogfil til at oversætte nævnte menupunkter. Læs webtrees WIKI for mere info."
 
-#: app/Template/AdminTemplate.php:306
+#: app/Template/AdminTemplate.php:308
 msgid "The settings will be reset to default. Are you sure you want to do this?"
 msgstr "Indstillingerne resettes til default. Er du sikker på du vil gøre dette?"
 
-#: app/Template/AdminTemplate.php:226
+#: app/Template/AdminTemplate.php:228
 msgid "Use a compact menu"
 msgstr "Brug en kompakt menu"
+
+#: app/Template/AdminTemplate.php:200
+msgid "left"
+msgstr ""
+
+#: app/Template/AdminTemplate.php:200
+msgid "right"
+msgstr ""
 
 #~ msgid "Options"
 #~ msgstr "Indstillinger"
