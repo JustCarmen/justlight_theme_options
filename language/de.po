@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustLight Theme Options\n"
 "POT-Creation-Date: 2020-12-22 21:38+0100\n"
-"PO-Revision-Date: 2020-08-27 19:40+0200\n"
+"PO-Revision-Date: 2020-12-23 13:02+0100\n"
 "Last-Translator: Martin Pannier <der@bauschaffen.de>\n"
 "Language-Team: German <https://translate.webtrees.net/projects/justcarmen/justlight-theme-options/de/>\n"
 "Language: de\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
@@ -91,11 +91,11 @@ msgstr "Gemeinsames Menü für Diagramme, Listen und Kalendar verwenden"
 
 #: app/Template/AdminTemplate.php:200
 msgid "left"
-msgstr ""
+msgstr "linken"
 
 #: app/Template/AdminTemplate.php:200
 msgid "right"
-msgstr ""
+msgstr "rechten"
 
 #~ msgid "Options"
 #~ msgstr "Einstellungen"
